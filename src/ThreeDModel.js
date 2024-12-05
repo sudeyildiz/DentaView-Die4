@@ -21,7 +21,7 @@ const ThreeDModel = () => {
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
         mountRef.current.appendChild(renderer.domElement);
-        renderer.setClearColor(0x0000ff); // Schwarz als Hintergrundfarbe
+        renderer.setClearColor(0x0000ff); // blaue als Hintergrundfarbe
 
         // OrbitControls hinzufügen
         const controls = new OrbitControls(camera, renderer.domElement);
