@@ -1,13 +1,77 @@
+/* Allgemeine Einstellungen */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: linear-gradient(120deg, #e3f7ff, #ffe3ed); /* Helle Blau- und Rosatöne */
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Header-Styling */
+header {
+  background-color: #cce7ff; /* Helles Blau */
+  color: #333;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007acc; /* Dunkleres Blau für Kontrast */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff6fa5; /* Rosa als Hover-Farbe */
+}
+
+/* Hauptinhalt */
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+main h2 {
+  color: #007acc;
+}
+
+#threeDModel {
+  margin: 2em auto;
+  width: 80%;
+  height: 400px;
+  background-color: #f0faff; /* Sehr helles Blau für den Hintergrund */
+  border: 2px solid #ffe3ed; /* Helles Rosa als Rand */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer-Styling */
+footer {
+  background-color: #ffe3ed; /* Helles Rosa */
+  color: #333;
+  text-align: center;
+  padding: 1em;
+  border-top: 1px solid #cce7ff;
 }

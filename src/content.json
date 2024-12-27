@@ -1,0 +1,12 @@
+{
+  "impressum": {
+    "title": "Impressum",
+    "description": "Dies ist die Beschreibung des Impressums.",
+    "address": "Musterstraße 1, 12345 Musterstadt",
+    "contact": {
+      "phone": "01234/567890",
+      "email": "info@example.com"
+    },
+    "responsible": "Max Mustermann"
+  }
+}
