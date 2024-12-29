@@ -1,12 +1,12 @@
 {
   "impressum": {
     "title": "Impressum",
-    "description": "Dies ist die Beschreibung des Impressums.",
-    "address": "Musterstraße 1, 12345 Musterstadt",
+    "description": "Dies ist das Impressum für DentaView.",
+    "address": "Hauptstraße 45, 4020 Linz, Österreich",
     "contact": {
-      "phone": "01234/567890",
-      "email": "info@example.com"
+      "phone": "+43 987 654321",
+      "email": "info@dentaview.com"
     },
-    "responsible": "Max Mustermann"
+    "responsible": "Dr. Anna Zahn"
   }
 }
