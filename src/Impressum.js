@@ -1,43 +1,52 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import './styles.css'; // Importiere das CSS
 
 const Impressum = () => {
-    const [content, setContent] = useState({
-        title: "Lade Titel...",
-        description: "Lade Beschreibung...",
-        address: "",
-        contact: {
-            phone: "",
-            email: ""
-        },
-        responsible: ""
-    });
-
-    useEffect(() => {
-        console.log("Starte Fetch...");
-        fetch('/content.json')
-            .then(response => {
-                console.log("Antwortstatus:", response.status);
-                if (!response.ok) {
-                    throw new Error("Fehler beim Laden der Inhalte");
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log("Geladene Daten:", data);
-                setContent(data.impressum);
-            })
-            .catch(error => console.error("Fehler:", error));
-    }, []);
-
-
-
     return (
         <div>
-            <h2>{content.title || "Titel nicht verfügbar"}</h2>
-            <p>{content.description || "Beschreibung nicht verfügbar"}</p>
-            <p><strong>Adresse:</strong> {content.address || "Adresse nicht verfügbar"}</p>
-            <p><strong>Kontakt:</strong> {content.contact.phone || "Telefon nicht verfügbar"}, <a href={`mailto:${content.contact.email}`}>{content.contact.email || "E-Mail nicht verfügbar"}</a></p>
-            <p><strong>Verantwortlich:</strong> {content.responsible || "Verantwortlicher nicht verfügbar"}</p>
+            <header>
+                <img src="/logo.png" alt="DentaView Logo" className="logo" />
+                <h1>Impressum</h1>
+                <nav>
+                    <ul>
+                        <li><a href="/">Startseite</a></li>
+                        <li><a href="/beitrag1">Zahnanatomie</a></li>
+                        <li><a href="/beitrag2">Tipps</a></li>
+                        <li><a href="/impressum">Impressum</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h2>Projektteam DentaView</h2>
+                <p>
+                    HTBLuVA Spengergasse<br />
+                    1050 Wien, Österreich
+                </p>
+                <h2>Kontakt</h2>
+                <p>
+                    <a href="mailto:lea210449@spengergasse.at">lea210449@spengergasse.at</a><br />
+                    <a href="mailto:hri210451@spengergasse.at">hri210451@spengergasse.at</a><br />
+                    <a href="mailto:yil210453@spengergasse.at">yil210453@spengergasse.at</a><br />
+                    <a href="mailto:yil210487@spengergasse.at">yil210487@spengergasse.at</a>
+                </p>
+                <h2>DSGVO Hinweise</h2>
+                <p>Wir halten uns strikt an die Datenschutzgrundverordnung (DSGVO). Weitere Informationen finden Sie in den offiziellen Dokumenten:</p>
+                <ul>
+                    <li>
+                        <a href="https://www.spengergasse.at/?page_id=2029" target="_blank" rel="noopener noreferrer">
+                            Datenschutzerklärung der HTL Spengergasse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spengergasse.at/?page_id=2030" target="_blank" rel="noopener noreferrer">
+                            Impressum der HTL Spengergasse
+                        </a>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <p>&copy; 2024 DentaView. Alle Rechte vorbehalten.</p>
+            </footer>
         </div>
     );
 };

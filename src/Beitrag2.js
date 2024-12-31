@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import './styles.css'; // Importiere das CSS
 const Home = () => {
     const [content, setContent] = useState({});
 

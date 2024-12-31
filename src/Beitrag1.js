@@ -1,23 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const Beitrag1 = () => {
-    const [content, setContent] = useState({});
-
-    useEffect(() => {
-        let isMounted = true;
-
-        fetch('/content.json')
-            .then(response => response.json())
-            .then(data => {
-                if (isMounted) {
-                    setContent(data.impressum);
-                }
-            });
-
-        return () => {
-            isMounted = false;
-        };
-    }, []);
+    const content = {
+        title: "Zahnanatomie leicht gemacht",
+        description: "Lernen Sie alles über die Anatomie der menschlichen Zähne.",
+    };
 
     return (
         <div>

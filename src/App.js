@@ -7,6 +7,7 @@ import Beitrag1 from './Beitrag1';
 import Beitrag2 from './Beitrag2';
 import ThreeDModel from './ThreeDModel';
 
+
 const App = () => {
     return (
         <Router>
@@ -16,6 +17,7 @@ const App = () => {
                     <h1>DentaView</h1>
                     <nav>
                         <ul className="nav-links">
+
                             <li><Link to="/">Startseite</Link></li>
                             <li><Link to="/impressum">Impressum</Link></li>
                             <li><Link to="/beitrag1">Zahnanatomie leicht gemacht</Link></li>
