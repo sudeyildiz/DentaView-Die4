@@ -7,6 +7,7 @@ const Home = () => {
         quicklinks: [
             { text: "Impressum", href: "/impressum" },
             { text: "Tipps zur Zahnpflege", href: "/Beitrag2.html" }, // Updated link
+            {text:"Zahnanatomie", href:"/Beitrag1.html"},
         ],
     };
 

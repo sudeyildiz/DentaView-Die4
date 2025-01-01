@@ -1,40 +1,81 @@
-/* Startseite: Begrüßung */
-.welcome-section {
-    text-align: center;
-    padding: 5em 2em;
+/* Allgemeine Einstellungen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background: linear-gradient(120deg, #e3f7ff, #ffe3ed); /* Helle Blau- und Rosatöne */
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 2em auto;
-    max-width: 600px;
-}
-
-.welcome-section h2 {
-    color: #007acc; /* Helles Blau */
-    font-size: 2.5rem;
-    margin-bottom: 1em;
-}
-
-.welcome-section p {
-    font-size: 1.2rem;
+    color: #333;
     line-height: 1.6;
+}
+
+header {
+    background-color: #b3e5fc; /* Babyblau */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header img.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
     color: #333;
 }
 
-.welcome-section .button {
-    display: inline-block;
-    margin-top: 2em;
-    padding: 1em 2em;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    background-color: #007acc; /* Helles Blau */
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.welcome-section .button:hover {
-    background-color: #ff6fa5; /* Helles Rosa */
-    transform: scale(1.05);
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007acc; /* Dunkleres Blau */
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6fa5; /* Rosa */
+}
+
+/* Hauptinhalt */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #007acc;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #ffe3ed; /* Helles Rosa */
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #b3e5fc;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
