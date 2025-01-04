@@ -5,7 +5,7 @@ const Impressum = () => {
     return (
         <div>
             <header>
-                <img src="/logo.png" alt="DentaView Logo" className="logo" />
+                <img src="/logo.svg" alt="DentaView Logo" className="logo" />
                 <h1>Impressum</h1>
                 <nav>
                     <ul>

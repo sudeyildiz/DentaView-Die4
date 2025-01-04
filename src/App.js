@@ -8,14 +8,15 @@ import Impressum from './Impressum';
 import ThreeDModel from './ThreeDModel';
 
 
+
 const App = () => {
     return (
         <Router>
             <Layout>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/beitrag1" element={<Beitrag1 />} />
-                    <Route path="/beitrag2" element={<Beitrag2 />} />
+                    <Route path="/Beitrag1" element={<Beitrag1 />} />
+                    <Route path="/Beitrag2" element={<Beitrag2 />} />
                     <Route path="/impressum" element={<Impressum />} />
                     <Route path="/model" element={<ThreeDModel />} />
 

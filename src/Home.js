@@ -6,8 +6,8 @@ const Home = () => {
         description: "Entdecken Sie die Welt der Zahnanatomie mit interaktiven Modellen.",
         quicklinks: [
             { text: "Impressum", href: "/impressum" },
-            { text: "Tipps zur Zahnpflege", href: "/Beitrag2.html" }, // Updated link
-            {text:"Zahnanatomie", href:"/Beitrag1.html"},
+            { text: "Tipps zur Zahnpflege", href: "/Beitrag2" }, // Updated link
+            {text:"Zahnanatomie", href:"/Beitrag1" },
         ],
     };
 
@@ -26,4 +26,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Home
