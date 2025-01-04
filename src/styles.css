@@ -1,0 +1,81 @@
+/* Allgemeine Einstellungen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #e3f7ff, #ffe3ed); /* Helle Blau- und Rosatöne */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #b3e5fc; /* Babyblau */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header img.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007acc; /* Dunkleres Blau */
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6fa5; /* Rosa */
+}
+
+/* Hauptinhalt */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #007acc;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #ffe3ed; /* Helles Rosa */
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #b3e5fc;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
