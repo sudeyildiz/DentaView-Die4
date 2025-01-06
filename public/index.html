@@ -1,14 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DentaView</title>
-  <link rel="stylesheet" href="/styles.css" /> <!-- Verlinke die CSS-Datei -->
+  <title>DentaView - Zahngesundheit leicht gemacht</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css"> <!-- Verlinkung zur externen CSS-Datei -->
+  <style>
+    /* Allgemeine Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif; /* Schriftart: Roboto */
+      background-color: #fce4ec; /* Hintergrundfarbe hellrosa */
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #004085; /* Dunkles Blau für Überschriften */
+      font-weight: bold; /* Fette Schrift für Überschriften */
+    }
+
+    /* Header */
+    header {
+      background-color: #b3e5fc; /* Helles Blau */
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-container {
+      margin-bottom: 1rem;
+    }
+
+    .logo {
+      max-width: 150px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.3rem; /* Schriftgröße für Links */
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f48fb1; /* Sanftes Pink */
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background-color: #b3e5fc; /* Helles Blau */
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 3.5rem; /* Größere Schriftgröße für den Titel */
+      margin-bottom: 1rem;
+    }
+
+    .hero-section p {
+      font-size: 1.4rem; /* Größere Schrift für den Text */
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      background-color: #f48fb1; /* Sanftes Pink */
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem; /* Button Schriftgröße */
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #f1c40f; /* Goldene Farbe beim Hover */
+    }
+
+    /* Info Section */
+    .info-section {
+      padding: 3rem 2rem;
+      background-color: white;
+      text-align: center;
+    }
+
+    .info-section h2 {
+      font-size: 2.8rem; /* Schriftgröße für die Info-Überschrift */
+      margin-bottom: 2rem;
+    }
+
+    .info-section p {
+      font-size: 1.2rem; /* Schriftgröße für den Text */
+      margin-bottom: 2rem;
+    }
+
+    .info-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .info-box {
+      background-color: #e1f5fe; /* Sehr helles Blau */
+      padding: 2rem;
+      border-radius: 8px;
+      width: 30%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-box h3 {
+      font-size: 2rem; /* Schriftgröße der Info-Boxen */
+      margin-bottom: 1rem;
+    }
+
+    .info-box p {
+      font-size: 1.1rem; /* Schriftgröße für die Beschreibung in der Info-Box */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
 </head>
 <body>
-<div id="root"></div>
+<!-- Header mit Logo und Navigation -->
+<header>
+  <div class="logo-container">
+    <img src="DentaView-LOGO.png" alt="DentaView Logo" class="logo" width="150">
+  </div>
+  <section class="hero-section">
+    <h1>Willkommen bei DentaView</h1>
+  </section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="Beitrag1.html">Zahnanatomie</a></li>
+      <li><a href="Beitrag2.html">Tipps</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Info-Sektion mit Details zu DentaView -->
+<section class="info-section">
+  <h2>Über DentaView</h2>
+  <p>DentaView ist Ihre Informationsquelle rund um Zahngesundheit und Pflege. Unsere Experten bieten Ihnen wertvolle Tipps und fundiertes Wissen, um Ihre Zähne gesund zu erhalten und Ihr Lächeln zu perfektionieren.</p>
+
+  <!-- Drei Informationsboxen für die wichtigsten Themen -->
+  <div class="info-boxes">
+    <div class="info-box">
+      <h3>Zahnpflege</h3>
+      <p>Erfahren Sie alles über die richtige Pflege Ihrer Zähne und das richtige Zahnputzverhalten.</p>
+    </div>
+    <div class="info-box">
+      <h3>Gesunde Ernährung</h3>
+      <p>Wie eine ausgewogene Ernährung Ihre Zahngesundheit unterstützen kann.</p>
+    </div>
+    <div class="info-box">
+      <h3>Regelmäßige Besuche</h3>
+      <p>Warum regelmäßige Zahnarztbesuche wichtig sind und wie sie Ihnen helfen können.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer mit Copyright-Hinweis -->
+<footer>
+  <p>&copy; 2024 DentaView. Alle Rechte vorbehalten.</p>
+</footer>
 </body>
 </html>
-
-

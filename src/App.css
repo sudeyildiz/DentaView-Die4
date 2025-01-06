@@ -68,3 +68,8 @@ body {
   padding: 10px;
   margin-top: auto;
 }
+header .logo {
+  max-width: 50px;  /* Setzt die maximale Breite des Logos */
+  height: auto;  /* Erhält das Seitenverhältnis des Logos */
+}
+

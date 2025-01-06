@@ -1,77 +1,133 @@
-/* Allgemeine Einstellungen */
-body {
-  font-family: Arial, sans-serif;
+/* Allgemeine Styles */
+* {
   margin: 0;
   padding: 0;
-  background: linear-gradient(120deg, #e3f7ff, #ffe3ed); /* Helle Blau- und Rosatöne */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Schriftart: Roboto */
+  background-color: #b3e5fc; /* Hintergrundfarbe hellblau */
   color: #333;
 }
 
-/* Header-Styling */
+h1, h2, h3 {
+  color: #004085; /* Dunkles Blau für Überschriften */
+  font-weight: bold; /* Fette Schrift für Überschriften */
+}
+
+/* Header */
 header {
-  background-color: #cce7ff; /* Helles Blau */
-  color: #333;
-  padding: 1em;
+  background-color: #ffffff; /* Weiß für den Header */
+  padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.logo-container {
+  margin-bottom: 1rem;
+}
 
-
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
+.logo {
+  max-width: 150px;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
-  gap: 1em;
-}
-
-nav ul li {
-  display: inline;
+  gap: 2rem;
 }
 
 nav ul li a {
+  color: #004085; /* Dunkelblau für Links */
   text-decoration: none;
-  color: #007acc; /* Dunkleres Blau für Kontrast */
   font-weight: bold;
+  font-size: 1.3rem; /* Schriftgröße für Links */
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ff6fa5; /* Rosa als Hover-Farbe */
+  color: #f48fb1; /* Sanftes Pink beim Hover */
 }
 
-/* Hauptinhalt */
-main {
-  padding: 2em;
+/* Hero Section */
+.hero-section {
+  background-color: #b3e5fc; /* Helles Blau */
+  color: white;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
-main h2 {
-  color: #007acc;
+.hero-section h1 {
+  font-size: 3.5rem; /* Größere Schriftgröße für den Titel */
+  margin-bottom: 1rem;
 }
 
-#threeDModel {
-  margin: 2em auto;
-  width: 80%;
-  height: 400px;
-  background-color: #f0faff; /* Sehr helles Blau für den Hintergrund */
-  border: 2px solid #ffe3ed; /* Helles Rosa als Rand */
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.hero-section p {
+  font-size: 1.4rem; /* Größere Schrift für den Text */
+  margin-bottom: 1.5rem;
 }
 
-/* Footer-Styling */
+.cta-button {
+  background-color: #f48fb1; /* Sanftes Pink */
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem; /* Button Schriftgröße */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f1c40f; /* Goldene Farbe beim Hover */
+}
+
+/* Info Section */
+.info-section {
+  padding: 3rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.info-section h2 {
+  font-size: 2.8rem; /* Schriftgröße für die Info-Überschrift */
+  margin-bottom: 2rem;
+}
+
+.info-section p {
+  font-size: 1.2rem; /* Schriftgröße für den Text */
+  margin-bottom: 2rem;
+}
+
+.info-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.info-box {
+  background-color: #e1f5fe; /* Sehr helles Blau */
+  padding: 2rem;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h3 {
+  font-size: 2rem; /* Schriftgröße der Info-Boxen */
+  margin-bottom: 1rem;
+}
+
+.info-box p {
+  font-size: 1.1rem; /* Schriftgröße für die Beschreibung in der Info-Box */
+}
+
+/* Footer */
 footer {
-  background-color: #ffe3ed; /* Helles Rosa */
-  color: #333;
+  background-color: #333;
+  color: white;
   text-align: center;
-  padding: 1em;
-  border-top: 1px solid #cce7ff;
+  padding: 1rem;
+  margin-top: 3rem;
 }

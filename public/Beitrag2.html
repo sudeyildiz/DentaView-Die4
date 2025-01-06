@@ -1,79 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Verwaltung Ihrer Zahngesundheit: 5 Experten-Tipps für ein strahlendes Lächeln</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <title>5 Experten-Tipps für ein strahlendes Lächeln</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link zu Ihrem CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fce4ec;
+      color: #333;
+      box-sizing: border-box;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #b3e5fc;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    header .logo {
+      max-width: 150px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      text-transform: uppercase;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #f48fb1;
+    }
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 1rem auto;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      padding: 1.5rem;
+      background: #e3f2fd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      font-size: 2rem;
+      color: #004085;
+      border-bottom: 3px solid #004085;
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+      color: #00509e;
+    }
+    ul {
+      padding-left: 1.8rem;
+    }
+    li {
+      margin-bottom: 0.8rem;
+    }
+    strong {
+      color: #004085;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #333;
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    footer p {
+      margin: 0;
+    }
+    .side-decoration {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 80px; /* Erhöhte Breite */
+      background-image: url('tooth-icon.png'); /* Beispielbild */
+      background-size: 80px 80px; /* Vergrößert das Icon auf 80px x 80px */
+      background-repeat: no-repeat;
+      opacity: 0.6;
+    }
+    .side-decoration.left {
+      left: -60px;
+    }
+    .side-decoration.right {
+      right: -60px;
+    }
+    @media (max-width: 768px) {
+      main {
+        padding: 1.5rem;
+      }
+      header {
+        padding: 1rem;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .side-decoration {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
 <header>
   <img src="DentaView-LOGO.png" alt="DentaView Logo" class="logo">
-  <h1>Verwaltung Ihrer Zahngesundheit: 5 Experten-Tipps für ein strahlendes Lächeln</h1>
+  <h1>5 Experten-Tipps für ein strahlendes Lächeln</h1>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Beitrag1.html">Dental Anatomy</a></li>
-      <li><a href="Beitrag2.html">Tips</a></li>
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="Beitrag1.html">Zahnanatomie</a></li>
+      <li><a href="Beitrag2.html">Tipps</a></li>
       <li><a href="impressum.html">Impressum</a></li>
     </ul>
   </nav>
 </header>
-<main class="welcome-section"> <!-- Apply the class here -->
-  <h2>Verwaltung Ihrer Zahngesundheit: 5 Experten-Tipps für ein strahlendes Lächeln</h2>
-  <p>Eine konsequente Zahnpflege ist der Schlüssel zu gesunden Zähnen und einem selbstbewussten Lächeln. Hier finden Sie fünf fundierte Tipps, die nicht jeder kennt – für eine optimale Mundgesundheit und einen langfristigen Schutz vor Zahnerkrankungen.</p>
+<main>
+  <div class="side-decoration left"></div>
+  <div class="side-decoration right"></div>
+  <section>
+    <h2>Verwaltung Ihrer Zahngesundheit: 5 Experten-Tipps für ein strahlendes Lächeln</h2>
+    <p>Eine konsequente Zahnpflege ist der Schlüssel zu gesunden Zähnen und einem selbstbewussten Lächeln. Hier finden Sie fünf fundierte Tipps, die nicht jeder kennt – für eine optimale Mundgesundheit und einen langfristigen Schutz vor Zahnerkrankungen.</p>
+  </section>
 
-  <h3>1. Die richtige Putztechnik: Bass-Methode anwenden</h3>
-  <p>Die Putztechnik macht den Unterschied. Mit der Bass-Methode reinigen Sie nicht nur die Zahnoberflächen, sondern auch die empfindlichen Zahnfleischtaschen.</p>
-  <p><strong>Wie funktioniert die Bass-Methode?</strong></p>
-  <ul>
-    <li>Halten Sie die Zahnbürste in einem Winkel von 45 Grad zum Zahnfleisch.</li>
-    <li>Führen Sie kleine, vibrierende Bewegungen aus, ohne zu stark zu drücken.</li>
-    <li>Putzen Sie in kurzen Abschnitten, um alle Bereiche gründlich zu erreichen.</li>
-  </ul>
-  <p>💡 Tipp: Elektrische Zahnbürsten mit „Gum Care“-Modus unterstützen die korrekte Technik.</p>
+  <section>
+    <h3>1. Die richtige Putztechnik: Bass-Methode anwenden</h3>
+    <p>Die Putztechnik macht den Unterschied. Mit der Bass-Methode reinigen Sie nicht nur die Zahnoberflächen, sondern auch die empfindlichen Zahnfleischtaschen.</p>
+    <p><strong>Wie funktioniert die Bass-Methode?</strong></p>
+    <ul>
+      <li>Halten Sie die Zahnbürste in einem Winkel von 45 Grad zum Zahnfleisch.</li>
+      <li>Führen Sie kleine, vibrierende Bewegungen aus, ohne zu stark zu drücken.</li>
+      <li>Putzen Sie in kurzen Abschnitten, um alle Bereiche gründlich zu erreichen.</li>
+    </ul>
+    <p>💡 Tipp: Elektrische Zahnbürsten mit „Gum Care“-Modus unterstützen die korrekte Technik.</p>
+  </section>
 
-  <h3>2. Remineralisierende Zahnpasta wählen</h3>
-  <p>Die Wahl der Zahnpasta spielt eine zentrale Rolle für Ihre Zahngesundheit. Achten Sie auf Inhaltsstoffe, die den Zahnschmelz stärken und vor Karies schützen.</p>
-  <p><strong>Empfohlene Inhaltsstoffe:</strong></p>
-  <ul>
-    <li>Fluorid: Schützt vor Säureangriffen und fördert die Remineralisation.</li>
-    <li>Hydroxylapatit: Eine biokompatible Alternative zu Fluorid, die den Zahnschmelz aufbaut.</li>
-  </ul>
-  <p>🌟 Wussten Sie schon? Hydroxylapatit ähnelt dem natürlichen Aufbau Ihrer Zähne und eignet sich besonders für empfindliche Zahnhälse.</p>
+  <section>
+    <h3>2. Remineralisierende Zahnpasta wählen</h3>
+    <p>Die Wahl der Zahnpasta spielt eine zentrale Rolle für Ihre Zahngesundheit. Achten Sie auf Inhaltsstoffe, die den Zahnschmelz stärken und vor Karies schützen.</p>
+    <p><strong>Empfohlene Inhaltsstoffe:</strong></p>
+    <ul>
+      <li>Fluorid: Schützt vor Säureangriffen und fördert die Remineralisation.</li>
+      <li>Hydroxylapatit: Eine biokompatible Alternative zu Fluorid, die den Zahnschmelz aufbaut.</li>
+    </ul>
+    <p>🌟 Wussten Sie schon? Hydroxylapatit ähnelt dem natürlichen Aufbau Ihrer Zähne und eignet sich besonders für empfindliche Zahnhälse.</p>
+  </section>
 
-  <h3>3. Interdentalreinigung: Mehr als nur Zähneputzen</h3>
-  <p>70 % der Zahnoberflächen werden mit der Zahnbürste erreicht – aber was ist mit den Zwischenräumen?</p>
-  <p><strong>Die besten Methoden:</strong></p>
-  <ul>
-    <li>Zahnseide: Ideal für enge Zahnzwischenräume.</li>
-    <li>Interdentalbürsten: Besonders effektiv für größere Lücken und bei Zahnfleischerkrankungen.</li>
-  </ul>
-  <p>🔍 Profi-Tipp: Nutzen Sie Interdentalbürsten mit einer Kunststoffbeschichtung, um das Zahnfleisch zu schonen.</p>
+  <section>
+    <h3>3. Interdentalreinigung: Mehr als nur Zähneputzen</h3>
+    <p>70 % der Zahnoberflächen werden mit der Zahnbürste erreicht – aber was ist mit den Zwischenräumen?</p>
+    <p><strong>Die besten Methoden:</strong></p>
+    <ul>
+      <li>Zahnseide: Ideal für enge Zahnzwischenräume.</li>
+      <li>Interdentalbürsten: Besonders effektiv für größere Lücken und bei Zahnfleischerkrankungen.</li>
+    </ul>
+    <p>🔍 Profi-Tipp: Nutzen Sie Interdentalbürsten mit einer Kunststoffbeschichtung, um das Zahnfleisch zu schonen.</p>
+  </section>
 
-  <h3>4. Ernährung für starke Zähne</h3>
-  <p>Was Sie essen, beeinflusst Ihre Zahngesundheit erheblich.</p>
-  <p><strong>Förderliche Lebensmittel:</strong></p>
-  <ul>
-    <li>Käse und Milchprodukte: Neutralisieren Säuren und stärken den Zahnschmelz durch Kasein.</li>
-    <li>Ballaststoffreiche Lebensmittel: Rohes Gemüse und Obst reinigen die Zähne mechanisch.</li>
-    <li>Xylit-Kaugummi: Reduziert Kariesbakterien und fördert den Speichelfluss.</li>
-  </ul>
-  <p>🚫 Vermeiden Sie:</p>
-  <ul>
-    <li>Zuckerhaltige Snacks und Getränke, da diese den pH-Wert im Mund senken und Karies begünstigen.</li>
-  </ul>
+  <section>
+    <h3>4. Ernährung für starke Zähne</h3>
+    <p>Was Sie essen, beeinflusst Ihre Zahngesundheit erheblich.</p>
+    <p><strong>Förderliche Lebensmittel:</strong></p>
+    <ul>
+      <li>Käse und Milchprodukte: Neutralisieren Säuren und stärken den Zahnschmelz durch Kasein.</li>
+      <li>Ballaststoffreiche Lebensmittel: Rohes Gemüse und Obst reinigen die Zähne mechanisch.</li>
+      <li>Xylit-Kaugummi: Reduziert Kariesbakterien und fördert den Speichelfluss.</li>
+    </ul>
+    <p>🚫 Vermeiden Sie zuckerhaltige Snacks und Getränke, da diese den pH-Wert im Mund senken und Karies begünstigen.</p>
+  </section>
 
-  <h3>5. Regelmäßige professionelle Zahnreinigung (PZR)</h3>
-  <p>Selbst die beste Pflege zu Hause reicht nicht immer aus. Eine professionelle Zahnreinigung entfernt hartnäckige Ablagerungen und Zahnstein.</p>
-  <p><strong>Warum ist die PZR so wichtig?</strong></p>
-  <ul>
-    <li>Vorbeugung: Reduziert das Risiko von Zahnfleischerkrankungen und Karies.</li>
-    <li>Früherkennung: Zahnärzte erkennen Probleme wie Schmelzerosion oder Zahnfleischrückgang rechtzeitig.</li>
-  </ul>
-  <p>📅 Empfehlung: Planen Sie Ihre PZR alle 6 Monate – je nach individueller Situation kann auch ein kürzerer oder längerer Abstand sinnvoll sein.</p>
+  <section>
+    <h3>5. Regelmäßige professionelle Zahnreinigung (PZR)</h3>
+    <p>Selbst die beste Pflege zu Hause reicht nicht immer aus. Eine professionelle Zahnreinigung entfernt hartnäckige Ablagerungen und Zahnstein.</p>
+    <p><strong>Warum ist die PZR so wichtig?</strong></p>
+    <ul>
+      <li>Vorbeugung: Reduziert das Risiko von Zahnfleischerkrankungen und Karies.</li>
+      <li>Früherkennung: Zahnärzte erkennen Probleme wie Schmelzerosion oder Zahnfleischrückgang rechtzeitig.</li>
+    </ul>
+    <p>📅 Empfehlung: Planen Sie Ihre PZR alle 6 Monate – je nach individueller Situation kann auch ein kürzerer oder längerer Abstand sinnvoll sein.</p>
+  </section>
 </main>
+
 <footer>
   <p>&copy; 2024 DentaView. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
