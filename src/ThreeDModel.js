@@ -20,7 +20,7 @@ const ThreeDModel = () => {
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
-        renderer.setClearColor(0x0000ff);
+        renderer.setClearColor(0xfce1ff);  // Himmelblau
         mountRef.current.appendChild(renderer.domElement);
 
         // OrbitControls hinzufügen

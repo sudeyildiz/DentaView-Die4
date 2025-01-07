@@ -1,52 +1,117 @@
-/* Header-Styling */
+/* Header */
 header {
-    background-color: #cce7ff; /* Helles Blau */
+    background: linear-gradient(135deg, #cce7ff, #fce1ff);
+    padding: 20px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: relative;
+}
+
+.header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo */
 header img.logo {
-    margin: 0;
-    margin-left: -70px;
-    width: 300px; /* Größeres Logo */
+    width: 300px;
     height: auto;
-    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sanfter Schatten unter dem Logo */
-
 }
 
-
+/* Überschrift */
 header h1 {
-    font-size: 3.5em; /* Etwas kleinere Schrift für Eleganz */
+    font-size: 4.5em;
+    color: #ff6fa5; /* Rosa Farbe */
+    font-family: 'Montserrat', sans-serif; /* Moderne Schriftart */
+    font-weight: bold;
+    letter-spacing: 2px;
     margin: 0;
-    margin-left: -280px; /* Verschiebt den Titel weiter nach links */
-    color: #ff6fa5; /* Rosa Schrift */
-    font-family: 'Poppins', sans-serif; /* Elegante, moderne Schriftart */
-    letter-spacing: 3px; /* Mehr Abstand zwischen Buchstaben für bessere Lesbarkeit */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sanfter Schatten für Tiefe */
-    font-weight: 600; /* Halb-Fett für einen modernen Look */
+    margin-left: -1000px;
+    text-align: center;
+    flex: 1;
+
+    /* Textschatten für Tiefe */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -1px -1px 2px rgba(0, 0, 0, 0.1);
+
+    /* Bewegungseffekt */
+    animation: moveText 3s ease-in-out infinite;
 }
 
-
-/* Navigation */
-.nav-links {
-    display: flex;
-    gap: 15px;
+/* Animation für sanfte Bewegung */
+@keyframes moveText {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    50% {
+        transform: translateX(-10px) scale(1.05);
+    }
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+/* Menü */
+.menu {
+    font-size: 1.4em;
+    position: relative;
 }
 
-.nav-links a {
-    text-decoration: none;
-    background-color: #6fa5ff; /* Blau für Buttons */
+.dropdown-button {
+    background: linear-gradient(90deg, rgba(255, 111, 165, 0.7), rgba(111, 165, 255, 0.71));
     color: white;
-    padding: 10px 15px;
-    border-radius: 10px;
+    border: none;
+    padding: 20px 60px;
+    border-radius: 30px;
     font-size: 1em;
     font-weight: bold;
-    transition: background-color 0.3s;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.nav-links a:hover {
-    background-color: #ff6fa5; /* Rosa Hover-Farbe */
+.dropdown-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Menü */
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 10px 20px;
+    z-index: 10;
+    width: 200px;
+    text-align: left;
+}
+
+.dropdown-menu li {
+    margin: 10px 0;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 10px;
+    display: block;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: #ff6fa5;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+    margin-top: 20px;
 }
