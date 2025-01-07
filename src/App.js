@@ -6,6 +6,7 @@ import Beitrag1 from './Beitrag1';
 import Beitrag2 from './Beitrag2';
 import Impressum from './Impressum';
 import ThreeDModel from './ThreeDModel';
+import Quiz from "./Quiz";
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
                     <Route path="/Beitrag2" element={<Beitrag2 />} />
                     <Route path="/impressum" element={<Impressum />} />
                     <Route path="/model" element={<ThreeDModel />} />
+                    <Route path={"/Quiz"} element={<Quiz />} />
 
                 </Routes>
             </Layout>

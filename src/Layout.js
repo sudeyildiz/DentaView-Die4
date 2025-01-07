@@ -7,8 +7,10 @@ const Layout = ({ children }) => {
     return (
         <div>
             <header>
-                <img src="/DentaView-LOGO.png" alt="DentaView Logo" className="logo" />
-                <h1>DentaView</h1>
+                <img src="/logo3.png" alt="DentaView Logo" className="logo" />
+                <h1>
+                    <>DentaView</>
+                </h1>
                 <nav>
                     <ul>
                         <li><Link to="/">Startseite</Link></li>

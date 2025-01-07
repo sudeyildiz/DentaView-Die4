@@ -15,60 +15,70 @@ const ThreeDModel = () => {
             0.1,
             1000
         );
-        camera.position.set(0, 0, 6); // Setze die Kamera weiter weg, sodass das Modell sichtbar ist
+        camera.position.set(0, 0, 6);
 
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setClearColor(0x0000ff);
         mountRef.current.appendChild(renderer.domElement);
-        renderer.setClearColor(0x0000ff); // blaue als Hintergrundfarbe
 
         // OrbitControls hinzufügen
         const controls = new OrbitControls(camera, renderer.domElement);
-        controls.enableDamping = true; // Sanfte Bewegung
+        controls.enableDamping = true;
         controls.dampingFactor = 0.05;
-        controls.minDistance = 3; // Minimaler Zoom-Abstand (Modell bleibt immer sichtbar)
-        controls.maxDistance = 10; // Maximale Zoom-Distanz
-        controls.target.set(0, 0, 0); // Fokus auf die Mitte des Modells
+        controls.minDistance = 3;
+        controls.maxDistance = 10;
+        controls.target.set(0, 0, 0);
         controls.update();
 
         // Licht hinzufügen
-        const ambientLight = new THREE.AmbientLight(0xffffff, 1); // Umgebungslicht
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1);
         scene.add(ambientLight);
 
         const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
         directionalLight.position.set(10, 10, 10);
         scene.add(directionalLight);
 
-        // GLTFLoader verwenden, um ein 3D-Modell zu laden
+        // GLTFLoader verwenden
         const loader = new GLTFLoader();
         loader.load(
-            '/chemicals_opaque_test_v2.1.glb', // Pfad zu deinem 3D-Modell
+            '/chemicals_opaque_test_v2.1.glb',
             (gltf) => {
                 const model = gltf.scene;
-                model.scale.set(5, 5, 5); // Modell skalieren
-                model.position.set(0, -2, 0); // Position des Modells
+                model.scale.set(5, 5, 5);
+                model.position.set(0, -2, 0);
                 scene.add(model);
             },
-            (xhr) => {
-                console.log((xhr.loaded / xhr.total) * 100 + '% geladen');
-            },
-            (error) => {
-                console.error('Fehler beim Laden des 3D-Modells', error);
-            }
+            (xhr) => console.log((xhr.loaded / xhr.total) * 100 + '% geladen'),
+            (error) => console.error('Fehler beim Laden des 3D-Modells', error)
         );
 
         // Animation
         const animate = () => {
             requestAnimationFrame(animate);
-            controls.update(); // OrbitControls aktualisieren
+            controls.update();
             renderer.render(scene, camera);
         };
         animate();
 
+        // Fenstergröße anpassen
+        const onResize = () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        };
+        window.addEventListener('resize', onResize);
+
         // Cleanup bei unmount
         return () => {
-            mountRef.current.removeChild(renderer.domElement);
+            window.removeEventListener('resize', onResize);
+            controls.dispose();
+            renderer.dispose();
+
+            if (mountRef.current) {
+                mountRef.current.removeChild(renderer.domElement);
+            }
         };
     }, []);
 

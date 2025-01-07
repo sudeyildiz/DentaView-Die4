@@ -1,87 +1,87 @@
 /* Allgemeine Einstellungen */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(120deg, #e3f7ff, #ffe3ed); /* Helle Blau- und Rosatöne */
-  color: #333;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #e3f7ff, #ffe3ed); /* Helle Blau- und Rosatöne */
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Header-Styling */
 header {
-  background-color: #cce7ff; /* Helles Blau */
-  padding: 1.5em;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #cce7ff; /* Helles Blau */
+    padding: 1.5em;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5em;
-  color: #333;
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
 }
 
 /* Navigation */
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1.5em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
 }
 
 nav ul li {
-  display: inline;
+    display: inline;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #007acc; /* Dunkleres Blau */
-  font-weight: bold;
-  font-size: 1.2em;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: #007acc; /* Dunkleres Blau */
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ff6fa5; /* Rosa als Hover-Farbe */
+    color: #ff6fa5; /* Rosa als Hover-Farbe */
 }
 
 /* Hauptinhalt */
 main {
-  padding: 2em;
-  text-align: center;
+    padding: 2em;
+    text-align: center;
 }
 
 main h2 {
-  color: #007acc;
-  font-size: 2.5em;
-  margin-bottom: 1em;
+    color: #007acc;
+    font-size: 2.5em;
+    margin-bottom: 1em;
 }
 
 main p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 /* 3D Modell */
 #threeDModel {
-  margin: 2em auto;
-  width: 80%;
-  height: 400px;
-  background-color: #f0faff; /* Sehr helles Blau */
-  border: 2px solid #ffe3ed; /* Helles Rosa als Rand */
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 2em auto;
+    width: 80%;
+    height: 400px;
+    background-color: #f0faff; /* Sehr helles Blau */
+    border: 2px solid #ffe3ed; /* Helles Rosa als Rand */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
-  background-color: #ffe3ed; /* Helles Rosa */
-  color: #333;
-  text-align: center;
-  padding: 1.5em;
-  border-top: 2px solid #cce7ff;
-  margin-top: 2em;
+    background-color: #ffe3ed; /* Helles Rosa */
+    color: #333;
+    text-align: center;
+    padding: 1.5em;
+    border-top: 2px solid #cce7ff;
+    margin-top: 2em;
 }

@@ -1,142 +1,52 @@
-/* Allgemeine Einstellungen */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(120deg, #e3f7ff, #ffe3ed); /* Helle Blau- und Rosatöne */
-    color: #333;
-    line-height: 1.6;
-}
-
 /* Header-Styling */
 header {
     background-color: #cce7ff; /* Helles Blau */
-    padding: 1.5em;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header img.logo {
-    width: 100px;
-    margin-bottom: 10px;
+    margin: 0;
+    margin-left: -70px;
+    width: 300px; /* Größeres Logo */
+    height: auto;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sanfter Schatten unter dem Logo */
+
 }
+
 
 header h1 {
+    font-size: 3.5em; /* Etwas kleinere Schrift für Eleganz */
     margin: 0;
-    font-size: 2.5em;
-    color: #333;
+    margin-left: -280px; /* Verschiebt den Titel weiter nach links */
+    color: #ff6fa5; /* Rosa Schrift */
+    font-family: 'Poppins', sans-serif; /* Elegante, moderne Schriftart */
+    letter-spacing: 3px; /* Mehr Abstand zwischen Buchstaben für bessere Lesbarkeit */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sanfter Schatten für Tiefe */
+    font-weight: 600; /* Halb-Fett für einen modernen Look */
 }
+
 
 /* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
+.nav-links {
     display: flex;
-    justify-content: center;
-    gap: 1.5em;
+    gap: 15px;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+.nav-links a {
     text-decoration: none;
-    color: #007acc; /* Dunkleres Blau */
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ff6fa5; /* Rosa als Hover-Farbe */
-}
-
-/* Hauptinhalt */
-main {
-    padding: 2em;
-    text-align: center;
-}
-
-main h2 {
-    color: #007acc;
-    font-size: 2.5em;
-    margin-bottom: 1em;
-}
-
-main p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-/* Features */
-.features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5em;
-    margin-top: 2em;
-}
-
-.feature {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #6fa5ff; /* Blau für Buttons */
+    color: white;
+    padding: 10px 15px;
     border-radius: 10px;
-    padding: 1.5em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.feature h3 {
-    color: #007acc;
-    margin-bottom: 0.5em;
-}
-
-.feature p {
     font-size: 1em;
-}
-
-/* Schnellzugriffsbereich */
-.quicklinks {
-    background-color: #ffe3ed;
-    padding: 2em 1em;
-    text-align: center;
-    margin-top: 2em;
-    border-top: 2px solid #cce7ff;
-}
-
-.quicklinks h2 {
-    color: #007acc;
-    margin-bottom: 1em;
-}
-
-.quicklinks-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5em;
-    flex-wrap: wrap;
-}
-
-.button {
-    display: inline-block;
-    background-color: #007acc;
-    color: #fff;
-    padding: 0.8em 1.2em;
-    text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
-.button:hover {
-    background-color: #005b99;
-}
-
-/* Footer */
-footer {
-    background-color: #ffe3ed; /* Helles Rosa */
-    color: #333;
-    text-align: center;
-    padding: 1.5em;
-    border-top: 2px solid #cce7ff;
-    margin-top: 2em;
+.nav-links a:hover {
+    background-color: #ff6fa5; /* Rosa Hover-Farbe */
 }
