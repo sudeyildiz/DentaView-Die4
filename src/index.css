@@ -1,133 +1,87 @@
-/* Allgemeine Styles */
-* {
+/* Allgemeine Einstellungen */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background: linear-gradient(120deg, #e3f7ff, #ffe3ed); /* Helle Blau- und Rosatöne */
+  color: #333;
+  line-height: 1.6;
 }
 
-body {
-  font-family: 'Roboto', sans-serif; /* Schriftart: Roboto */
-  background-color: #b3e5fc; /* Hintergrundfarbe hellblau */
+/* Header-Styling */
+header {
+  background-color: #cce7ff; /* Helles Blau */
+  padding: 1.5em;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
   color: #333;
 }
 
-h1, h2, h3 {
-  color: #004085; /* Dunkles Blau für Überschriften */
-  font-weight: bold; /* Fette Schrift für Überschriften */
-}
-
-/* Header */
-header {
-  background-color: #ffffff; /* Weiß für den Header */
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.logo-container {
-  margin-bottom: 1rem;
-}
-
-.logo {
-  max-width: 150px;
-}
-
+/* Navigation */
 nav ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5em;
+}
+
+nav ul li {
+  display: inline;
 }
 
 nav ul li a {
-  color: #004085; /* Dunkelblau für Links */
   text-decoration: none;
+  color: #007acc; /* Dunkleres Blau */
   font-weight: bold;
-  font-size: 1.3rem; /* Schriftgröße für Links */
-  transition: color 0.3s ease;
+  font-size: 1.2em;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #f48fb1; /* Sanftes Pink beim Hover */
+  color: #ff6fa5; /* Rosa als Hover-Farbe */
 }
 
-/* Hero Section */
-.hero-section {
-  background-color: #b3e5fc; /* Helles Blau */
-  color: white;
-  padding: 4rem 2rem;
+/* Hauptinhalt */
+main {
+  padding: 2em;
   text-align: center;
 }
 
-.hero-section h1 {
-  font-size: 3.5rem; /* Größere Schriftgröße für den Titel */
-  margin-bottom: 1rem;
+main h2 {
+  color: #007acc;
+  font-size: 2.5em;
+  margin-bottom: 1em;
 }
 
-.hero-section p {
-  font-size: 1.4rem; /* Größere Schrift für den Text */
-  margin-bottom: 1.5rem;
+main p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
-.cta-button {
-  background-color: #f48fb1; /* Sanftes Pink */
-  color: white;
-  padding: 1rem 2rem;
-  font-size: 1.2rem; /* Button Schriftgröße */
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #f1c40f; /* Goldene Farbe beim Hover */
-}
-
-/* Info Section */
-.info-section {
-  padding: 3rem 2rem;
-  background-color: white;
-  text-align: center;
-}
-
-.info-section h2 {
-  font-size: 2.8rem; /* Schriftgröße für die Info-Überschrift */
-  margin-bottom: 2rem;
-}
-
-.info-section p {
-  font-size: 1.2rem; /* Schriftgröße für den Text */
-  margin-bottom: 2rem;
-}
-
-.info-boxes {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.info-box {
-  background-color: #e1f5fe; /* Sehr helles Blau */
-  padding: 2rem;
-  border-radius: 8px;
-  width: 30%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.info-box h3 {
-  font-size: 2rem; /* Schriftgröße der Info-Boxen */
-  margin-bottom: 1rem;
-}
-
-.info-box p {
-  font-size: 1.1rem; /* Schriftgröße für die Beschreibung in der Info-Box */
+/* 3D Modell */
+#threeDModel {
+  margin: 2em auto;
+  width: 80%;
+  height: 400px;
+  background-color: #f0faff; /* Sehr helles Blau */
+  border: 2px solid #ffe3ed; /* Helles Rosa als Rand */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #ffe3ed; /* Helles Rosa */
+  color: #333;
   text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
+  padding: 1.5em;
+  border-top: 2px solid #cce7ff;
+  margin-top: 2em;
 }

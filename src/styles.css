@@ -8,11 +8,12 @@ body {
     line-height: 1.6;
 }
 
+/* Header-Styling */
 header {
-    background-color: #b3e5fc; /* Babyblau */
-    padding: 20px;
+    background-color: #cce7ff; /* Helles Blau */
+    padding: 1.5em;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header img.logo {
@@ -22,17 +23,18 @@ header img.logo {
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #333;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 10px 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.5em;
 }
 
 nav ul li {
@@ -48,18 +50,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ff6fa5; /* Rosa */
+    color: #ff6fa5; /* Rosa als Hover-Farbe */
 }
 
 /* Hauptinhalt */
 main {
-    padding: 20px;
+    padding: 2em;
     text-align: center;
 }
 
 main h2 {
     color: #007acc;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 1em;
 }
 
@@ -68,14 +70,73 @@ main p {
     margin-bottom: 20px;
 }
 
+/* Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.feature {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    color: #007acc;
+    margin-bottom: 0.5em;
+}
+
+.feature p {
+    font-size: 1em;
+}
+
+/* Schnellzugriffsbereich */
+.quicklinks {
+    background-color: #ffe3ed;
+    padding: 2em 1em;
+    text-align: center;
+    margin-top: 2em;
+    border-top: 2px solid #cce7ff;
+}
+
+.quicklinks h2 {
+    color: #007acc;
+    margin-bottom: 1em;
+}
+
+.quicklinks-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007acc;
+    color: #fff;
+    padding: 0.8em 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #005b99;
+}
+
 /* Footer */
 footer {
     background-color: #ffe3ed; /* Helles Rosa */
     color: #333;
     text-align: center;
-    padding: 10px;
-    border-top: 2px solid #b3e5fc;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 1.5em;
+    border-top: 2px solid #cce7ff;
+    margin-top: 2em;
 }
