@@ -69,6 +69,23 @@ const Beitrag1 = () => {
                     "Mundspülungen: Reduziert Bakterien im Mundraum.",
                     "Zahnarztbesuche: Regelmäßige Kontrolluntersuchungen, um Probleme frühzeitig zu erkennen."
                 ]
+            },
+            {
+                title: "7. Wussten Sie schon?",
+                items: [
+                    "Der Zahnschmelz ist härter als Knochen, aber nicht regenerierbar.",
+                    "Ein Mensch verbringt im Durchschnitt 38 Tage seines Lebens mit Zähneputzen.",
+                    "Karies gehört zu den häufigsten Erkrankungen weltweit."
+                ]
+            },
+            {
+                title: "8. Interaktive Zahnanatomie",
+                content: "Nutzen Sie unser interaktives 3D-Modell, um:",
+                items: [
+                    "Die Schichten und Teile eines Zahns zu erkunden.",
+                    "Den Aufbau verschiedener Zahnarten zu vergleichen.",
+                    "Ihre Zahngesundheit besser zu verstehen."
+                ]
             }
         ]
     };
