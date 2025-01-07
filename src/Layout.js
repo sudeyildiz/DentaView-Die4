@@ -16,8 +16,9 @@ const Layout = ({ children }) => {
                         <li><Link to="/">Startseite</Link></li>
                         <li><Link to="/Beitrag1">Zahnanatomie</Link></li>
                         <li><Link to="/Beitrag2">Tipps</Link></li>
-                        <li><Link to="/impressum">Impressum</Link></li>
                         <li><Link to="/model">3D-Modell</Link></li>
+                        <li><Link to="/Quiz">Zahn-Quiz</Link></li>
+                        <li><Link to="/impressum">Impressum</Link></li>
                     </ul>
                 </nav>
             </header>

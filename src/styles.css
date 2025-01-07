@@ -21,7 +21,7 @@ header img.logo {
 header h1 {
     font-size: 3.5em; /* Etwas kleinere Schrift für Eleganz */
     margin: 0;
-    margin-left: -280px; /* Verschiebt den Titel weiter nach links */
+    margin-left: -200px; /* Verschiebt den Titel weiter nach links */
     color: #ff6fa5; /* Rosa Schrift */
     font-family: 'Poppins', sans-serif; /* Elegante, moderne Schriftart */
     letter-spacing: 3px; /* Mehr Abstand zwischen Buchstaben für bessere Lesbarkeit */

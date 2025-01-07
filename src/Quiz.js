@@ -11,6 +11,11 @@ const Quiz = () => {
         q3: "a",
         q4: "a",
         q5: "b",
+        q6: "a",  // Neue Frage 1
+        q7: "b",  // Neue Frage 2
+        q8: "a",  // Neue Frage 3
+        q9: "a",  // Neue Frage 4
+        q10: "b", // Neue Frage 5
     };
 
     const questions = [
@@ -38,6 +43,32 @@ const Quiz = () => {
             question: "Wie oft wird eine professionelle Zahnreinigung (PZR) empfohlen?",
             options: ["Alle 3 Monate", "Alle 6 Monate", "Einmal im Jahr"],
             correctAnswer: "Alle 6 Monate"
+        },
+        // Neue Fragen basierend auf dem Text
+        {
+            question: "Welche Schicht des Zahns ist die härteste Substanz im menschlichen Körper?",
+            options: ["Zahnschmelz", "Dentin", "Zahnmark"],
+            correctAnswer: "Zahnschmelz"
+        },
+        {
+            question: "Welcher Teil des Zahns verankert den Zahn im Kieferknochen?",
+            options: ["Wurzel", "Krone", "Zahnhals"],
+            correctAnswer: "Wurzel"
+        },
+        {
+            question: "Welche Zahnart ist ideal zum Reißen und Zerkleinern von Nahrung?",
+            options: ["Eckzähne", "Schneidezähne", "Backenzähne"],
+            correctAnswer: "Eckzähne"
+        },
+        {
+            question: "Wie nennt man die äußere Schicht eines Zahns, die den Zahn vor Abnutzung schützt?",
+            options: ["Zahnschmelz", "Dentin", "Zahnmark"],
+            correctAnswer: "Zahnschmelz"
+        },
+        {
+            question: "Was ist der Zahnhals?",
+            options: ["Der Übergang zwischen Krone und Wurzel", "Der sichtbare Teil des Zahns", "Der innere Teil des Zahns"],
+            correctAnswer: "Der Übergang zwischen Krone und Wurzel"
         }
     ];
 
@@ -71,7 +102,7 @@ const Quiz = () => {
 
     return (
         <div>
-            <h2>Quiz zur Zahngesundheit: 5 Experten-Tipps für ein strahlendes Lächeln</h2>
+            <h2>Quiz zur Zahngesundheit & Zahnanatomie</h2>
             <form id="quiz-form" onSubmit={handleSubmit}>
                 {questions.map((question, index) => (
                     <div key={index}>
