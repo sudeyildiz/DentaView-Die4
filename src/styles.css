@@ -108,10 +108,156 @@ header h1 {
     color: white;
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+main h2 {
+    color: #1059e3;
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+main h3 {
+    color: #555;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+main ul {
+    list-style: disc;
+    margin: 15px 0 15px 40px;
+}
+
+main ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+main ul li strong {
+    color: #333;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+nav a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+
+/* Fragen und Antworten linksbündig ausrichten */
+#quiz-form p {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#quiz-form label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Größerer Button */
+#quiz-form button {
+    display: block;
+    margin: 20px auto; /* Zentriert */
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#quiz-form button:hover {
+    background-color: #0056b3; /* Dunklerer Blau-Ton beim Hover */
+}
+#result {
+    text-align: left;
+}
+
+#result h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#result ul {
+    list-style-type: none; /* Entfernt die Punkte vor den Listenpunkten */
+    padding-left: 0; /* Entfernt den linken Abstand */
+}
+
+#result li {
+    margin-bottom: 15px; /* Abstand zwischen den einzelnen Fragen */
+    text-align: left;
+}
+
+#result li strong {
+    display: block; /* Macht die Frage auf einem eigenen Block */
+    margin-bottom: 5px; /* Abstand zur Antwort */
+}
+
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #f1f1f1;
-    margin-top: 20px;
+    background: rgba(253, 253, 253, 0.45);
+    border-top: 1px solid #effdff;
 }
+
+footer p {
+    font-size: 1em;
+    color: #555;
+}
+
+footer p a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer p a:hover {
+    color: #0056b3;
+}
+

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './styles.css'; // Globale CSS-Datei importieren
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import ThreeDModel from './ThreeDModel'; // Importiere die 3D-Modell-Komponente
 
 const Layout = ({ children }) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const location = useLocation(); // Aktuellen Pfad abfragen
 
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
@@ -14,7 +16,7 @@ const Layout = ({ children }) => {
             <header>
                 <div className="header-container">
                     <img src="/logo3.png" alt="DentaView Logo" className="logo" />
-                    <h1>Dentaview</h1>
+                    <h1>DentaView</h1>
                     <div className="menu">
                         <button
                             className="dropdown-button"
@@ -35,7 +37,16 @@ const Layout = ({ children }) => {
                     </div>
                 </div>
             </header>
+
+            {/* Zeige das 3D-Modell nur auf der Seite mit dem Pfad '/model' */}
+            {location.pathname === '/model' && (
+                <div id="three-d-container">
+                    <ThreeDModel />
+                </div>
+            )}
+
             <main>{children}</main>
+
             <footer>
                 <p>&copy; 2024 DentaView. Alle Rechte vorbehalten.</p>
             </footer>

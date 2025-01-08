@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Beitrag2 = () => {
     const content = {
         title: "Verwaltung Ihrer Zahngesundheit: 5 Experten-Tipps für ein strahlendes Lächeln",

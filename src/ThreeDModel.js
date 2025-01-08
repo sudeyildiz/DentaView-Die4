@@ -20,7 +20,7 @@ const ThreeDModel = () => {
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
-        renderer.setClearColor(0xfce1ff);  // Himmelblau
+        renderer.setClearColor(0xfce1ff); // Himmelblau
         mountRef.current.appendChild(renderer.domElement);
 
         // OrbitControls hinzufügen
@@ -82,7 +82,23 @@ const ThreeDModel = () => {
         };
     }, []);
 
-    return <div ref={mountRef} style={{ width: '100vw', height: '100vh' }} />;
+    return (
+        <div className="three-d-page">
+            <main
+                style={{
+                    maxWidth: 'none',
+                    margin: 0,
+                    padding: 0,
+                    background: 'none',
+                    borderRadius: 0,
+                    boxShadow: 'none',
+                    textAlign: 'unset',
+                }}
+            >
+                <div ref={mountRef} style={{ width: '100%', height: '100%' }} />
+            </main>
+        </div>
+    );
 };
 
 export default ThreeDModel;
