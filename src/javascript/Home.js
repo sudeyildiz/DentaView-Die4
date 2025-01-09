@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'; // Import für das Styling
+import '../design/styles.css'; // Import für das Styling
 
 const Home = () => {
     return (
@@ -46,7 +46,7 @@ const Home = () => {
                             Die Inhalte sind übersichtlich strukturiert und leicht verständlich – ideal für Lernende,
                             Fachleute und alle, die mehr über Zähne erfahren möchten.
                         </p>
-                        <a href="/Beitrag2" className="cta-button">Mehr erfahren</a>
+                        <a href="/javascript/Beitrag2" className="cta-button">Mehr erfahren</a>
                     </div>
 
                     <div className="box">
@@ -58,7 +58,7 @@ const Home = () => {
                             Verständnis zu überprüfen.
                             Spielerisch und motivierend – ideal für eine effektive Lernkontrolle.
                         </p>
-                        <a href="/quiz" className="cta-button">Zum Quiz</a>
+                        <a href="/src/javascript/Quiz" className="cta-button">Zum Quiz</a>
                     </div>
 
                     <div className="box">

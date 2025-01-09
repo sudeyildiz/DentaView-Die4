@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles.css'; // Globale CSS-Datei importieren
+import '../design/styles.css'; // Globale CSS-Datei importieren
 import { Link, useLocation } from 'react-router-dom';
 import ThreeDModel from './ThreeDModel'; // Importiere die 3D-Modell-Komponente
 
