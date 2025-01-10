@@ -1,39 +1,65 @@
-/// <reference types="cypress" />
-
-describe('Quiz App End-to-End Test', () => {
+describe('Quiz Component Tests', () => {
     beforeEach(() => {
-        // Besuche die Seite und warte, bis sie geladen ist
-        cy.visit('http://localhost:58645/Quiz', { timeout: 20000 }); // Passe die URL an, falls nötig
+        // Besuche die Seite mit der Quiz-Komponente
+        cy.visit('http://localhost:62824/Quiz');
     });
 
-    it('should load the quiz and display questions', () => {
-        // Überprüfe, ob das Quiz korrekt geladen wurde
-        cy.contains('h2', 'Quiz zur Zahngesundheit & Zahnanatomie', { timeout: 10000 }).should('exist');
-        cy.get('form#quiz-form').should('exist');
-        cy.get('form#quiz-form div').should('have.length', 10); // Überprüft, ob 10 Fragen angezeigt werden
+    it('should load the quiz questions correctly', () => {
+        // Überprüfen, ob die Überschrift geladen ist
+        cy.contains('Quiz zur Zahngesundheit & Zahnanatomie').should('exist');
+
+        // Überprüfen, ob alle Fragen geladen sind
+        cy.fixture('quiz.json').then((quiz) => {
+            cy.get('form#quiz-form div').should('have.length', quiz.questions.length);
+        });
     });
 
-    it('should allow answering questions and display results', () => {
-        // Überprüfen, ob das Formular vorhanden ist
-        cy.get('form#quiz-form', { timeout: 10000 }).should('exist');
+    it('should allow selecting answers for each question', () => {
+        // Wähle eine Antwort für jede Frage
+        cy.get('form#quiz-form div').each(($question) => {
+            cy.wrap($question)
+                .find('input[type="radio"]')
+                .first()
+                .check();
+        });
+    });
 
-        // Beantworte jede Frage
-        cy.get('input[name="q1"][value="b"]').should('exist').check();
-        cy.get('input[name="q2"][value="a"]').check();
-        cy.get('input[name="q3"][value="a"]').check();
-        cy.get('input[name="q4"][value="a"]').check();
-        cy.get('input[name="q5"][value="b"]').check();
-        cy.get('input[name="q6"][value="a"]').check();
-        cy.get('input[name="q7"][value="b"]').check();
-        cy.get('input[name="q8"][value="a"]').check();
-        cy.get('input[name="q9"][value="a"]').check();
-        cy.get('input[name="q10"][value="b"]').check();
+    it('should calculate the score and display results correctly', () => {
+        // Wähle eine Antwort für jede Frage
+        cy.get('form#quiz-form div').each(($question) => {
+            cy.wrap($question)
+                .find('input[type="radio"]')
+                .first()
+                .check();
+        });
 
         // Sende das Formular ab
         cy.get('form#quiz-form').submit();
 
-        // Überprüfe das Ergebnis
-        cy.get('#result', { timeout: 10000 }).should('exist');
-        cy.get('#result p').should('contain', 'Sie haben 10 von 10 Fragen richtig beantwortet.');
+        // Überprüfe, ob das Ergebnis angezeigt wird
+        cy.get('#result').should('exist');
+        cy.get('#result p').contains('Sie haben').should('exist');
+
+        // Überprüfe, ob falsche Antworten angezeigt werden, falls vorhanden
+        cy.get('#result h3').contains('Falsche Antworten').should('exist');
+    });
+
+    it('should display the correct score when all answers are correct', () => {
+        // Lade die Fragen aus der JSON-Datei
+        cy.fixture('quiz.json').then((quiz) => {
+            quiz.questions.forEach((question, index) => {
+                cy.get(`input[name="q${index + 1}"]`)
+                    .filter(`[value="${question.correctAnswer}"]`)
+                    .check();
+            });
+        });
+
+        // Sende das Formular ab
+        cy.get('form#quiz-form').submit();
+
+        // Überprüfen, ob die Punktzahl korrekt ist
+        cy.fixture('quiz.json').then((quiz) => {
+            cy.get('#result p').contains(`Sie haben ${quiz.questions.length} von ${quiz.questions.length} Fragen richtig beantwortet.`).should('exist');
+        });
     });
 });
