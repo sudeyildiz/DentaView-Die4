@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 const Beitrag1 = () => {
     const [content, setContent] = useState(null);
 

@@ -1,87 +1,135 @@
 {
-  "title": "Zahnanatomie leicht gemacht",
-  "description": "Lernen Sie alles über die Anatomie der menschlichen Zähne.",
+  "title": "Zahnanatomie",
+  "description": "Weisst du eigentlich was Dentin ist und wie Weisheitszähne auf lateinisch heissen? Hier findest du ein ausführliches Glossar rund ums Thema Zahnanatomie mit allen wichtigen Begriffen erklärt.",
   "sections": [
     {
-      "title": "Einführung",
-      "content": "Die menschliche Zahnanatomie ist faszinierend und komplex. Unsere Zähne sind weit mehr als nur Kauwerkzeuge – sie spielen eine entscheidende Rolle für die Sprache, das Aussehen und die allgemeine Gesundheit. In diesem Beitrag erfahren Sie alles über die Struktur, Funktion und Pflege unserer Zähne."
+      "title": "Was ist die Mundhöhle?",
+      "content": "Die Mundhöhle ist simpel gesagt der Innenraum des Mundes. Die Höhle wird seitlich durch die Wangen, oben durch den Gaumen, unten durch den Mundboden und nach vorne durch die Lippen begrenzt. Die Mundhöhle wird zum Grossteil von der Zunge ausgefüllt. Der Bereich zwischen den Zähnen und den Lippen bzw. den Wangen wird auch Mundvorhof genannt. In einer menschlichen Mundhöhle sind über 700 Bakterienarten nachweisbar. Diese leben in einem natürlichen Gleichgewicht, ohne dem Menschen zu schaden. Krankheiten entstehen meist erst, wenn dieses Gleichgewicht gestört wird. Karies und Zahnfleischentzündungen gehören zu den häufigsten Erkrankungen der Mundhöhle."
     },
     {
-      "title": "1. Die Grundstruktur eines Zahns",
+      "title": "Die Mundschleimhaut",
+      "content": "Die Mundschleimhaut befindet sich auf der Innenseite der Mundhöhle und bedeckt diese vollständig. Der Teil der Mundschleimhaut im Bereich der Zähne wird als Zahnfleisch bezeichnet. In der Mundschleimhaut, welche zum Grossteil aus Bindegewebe besteht, gibt es einzelne Lymphozyten (Abwehrzellen). Die Schleimhaut wird von einem Plattenepithel bedeckt. In der Mundschleimhaut befinden sich Sinneszellen für Temperatur-, Schmerz- und Tastempfinden. Wo die Schleimhaut beim Kauvorgang stärker belastet wird, ist sie etwas härter als an unbelasteten Stellen."
+    },
+    {
+      "title": "Funktion der Zähne und verschiedene Arten von Zähnen",
+      "content": "Die Zähne in unserem Mund spielen eine entscheidende Rolle in unserem täglichen Leben. Sie ermöglichen das Zerkleinern unserer Nahrung und tragen zur Artikulation und Formgebung unseres Gesichts bei.",
       "subsections": [
         {
-          "subtitle": "1.1 Die Hauptschichten eines Zahns:",
-          "content": [
-            "Zahnschmelz (Enamel): Die äußere, sichtbare Schicht des Zahns. Härteste Substanz im menschlichen Körper, schützt den Zahn vor Abnutzung und Säure.",
-            "Dentin: Liegt unter dem Zahnschmelz. Etwas weicher und enthält winzige Kanäle, die Reize an den Zahnnerv weiterleiten.",
-            "Zahnmark (Pulpa): Das weiche Gewebe im Inneren des Zahns. Enthält Blutgefäße und Nerven, die den Zahn lebendig und empfindlich machen."
-          ]
+          "title": "Funktion der Zähne",
+          "content": "Die Zähne haben verschiedene Funktionen, darunter das Zerkleinern und Zerreiben von Nahrung, was den Verdauungsprozess erleichtert. Sie spielen auch eine wichtige Rolle bei der Aussprache und der Formgebung des Gesichts. Sie haben dementsprechend sowohl gesundheitlich-funktionale wie auch ästhetische Funktionen."
         },
         {
-          "subtitle": "1.2 Die Hauptteile eines Zahns:",
-          "content": [
-            "Krone: Der sichtbare Teil des Zahns oberhalb des Zahnfleischs.",
-            "Zahnhals: Der Übergang zwischen Krone und Wurzel.",
-            "Wurzel: Verankert den Zahn im Kieferknochen."
+          "title": "Verschiedene Arten von Zähnen",
+          "content": "Es gibt verschiedene Arten von Zähnen, die alle eine spezifische Funktion erfüllen.",
+          "items": [
+            "Schneidezähne",
+            "Eckzähne",
+            "Vormahlzähne",
+            "Mahlzähne/Backenzähne",
+            "Weisheitszähne"
           ]
         }
       ]
     },
     {
-      "title": "2. Die verschiedenen Zahnarten",
-      "content": "Der Mensch besitzt im Erwachsenenalter 32 Zähne, die in vier verschiedene Typen unterteilt sind:",
-      "items": [
-        "Schneidezähne (Incisivi): 8 Zähne (4 oben, 4 unten). Flach und scharf, perfekt zum Abbeißen von Nahrung.",
-        "Eckzähne (Canini): 4 Zähne (2 oben, 2 unten). Spitz und robust, ideal zum Reißen und Zerkleinern.",
-        "Vormahlzähne (Prämolaren): 8 Zähne (4 oben, 4 unten). Flach mit Höckern, helfen beim Zerkleinern von Nahrung.",
-        "Backenzähne (Molaren): 12 Zähne (6 oben, 6 unten, inklusive der Weisheitszähne). Große Kauflächen für effizientes Mahlen und Zerquetschen."
+      "title": "Schneidezähne",
+      "content": "Die Zähne im vorderen Bereich des Kiefers sind die Schneidezähne. Sie befinden sich im Ober- und Unterkiefer. Schneidezähne sind scharf, da sie zum Abbeissen von Nahrung dienen. Zusammen mit den Eckzähnen gehören die Schneidezähne zu den Frontzähnen. Ein Mensch hat 8 Schneidezähne – zwei mittlere und zwei seitliche, jeweils im Unter- und Oberkiefer. Die Schneidekante der oberen und unteren Zähne führt eine Scherenbewegung aus. Die Spitzen der Schneidezähne können durch den dünneren Zahnschmelz transparent erscheinen."
+    },
+    {
+      "title": "Eckzähne",
+      "content": "Zwischen den Schneide- und Backenzähnen befinden sich die Eckzähne. Es gibt im menschlichen Gebiss 4 Eckzähne. Zwei im Oberkiefer und zwei im Unterkiefer. In Isländisch heisst der Eckzahn 'Augntönn' und in Englisch 'eye tooth'. Das kommt daher, weil die Zahnwurzel des oberen Eckzahnes fast bis zur knöchernen Augenhöhle reicht. Entzündungen des Zahnes führen daher oft zu Rötungen und Schwellungen dicht unter dem Auge."
+    },
+    {
+      "title": "Vormahlzähne",
+      "content": "Vormahlzähne, auch Prämolare genannt, gehören zu den Backenzähnen im menschlichen Gebiss. Sie kommen zweimal in jeder Kieferhälfte vor und liegen zwischen den Eckzähnen und Mahlzähnen. Ursprünglich gab es 4 Prämolare in jeder Kieferhälfte. Im Laufe der Zeit haben sich diese jedoch auf 2 reduziert. Bei den Nagetieren werden gar keine Vormahlzähne mehr ausgebildet. Beim Menschen haben die Vormahlzähne meistens zwei Höcker und zwei Wurzelkanäle."
+    },
+    {
+      "title": "Mahlzähne/Backenzähne",
+      "content": "Mahlzähne werden auch Molaren oder Backenzähne genannt. Sie befinden sich im hinteren Teil des Kiefers und liegen neben den Prämolaren. Das Wort Molar ist vom lateinischen 'molaris' abgeleitet, was Mühlstein bedeutet. Menschen haben im bleibenden Gebiss 12 Molaren. Die hintersten Molaren kennen die meisten als Weisheitszähne."
+    },
+    {
+      "title": "Weisheitszähne",
+      "content": "Als Weisheitszähne bezeichnet man die hintersten Backenzähne – von der Mitte aus gesehen der jeweils 8. Zahn links sowie rechts im Ober- und Unterkiefer. Jeder Mensch hat im Normalfall vier Weisheitszähne. Der Name Weisheitszähne leitet sich davon ab, dass diese Zähne erst im Erwachsenenalter durchbrechen. Im Lateinischen heissen sie dentes intellectus. In vielen Fällen müssen Weisheitszähne entfernt werden, weil Missverhältnisse zwischen Kiefergrösse und Zahnanzahl bestehen. Diese Missverhältnisse lassen die Weisheitszähne nicht oder nur teilweise durchbrechen."
+    },
+    {
+      "title": "Bleibende Zähne",
+      "content": "Die bleibenden Zähne ersetzen zwischen dem 6. und 17. Lebensjahr die Milchzähne im menschlichen Gebiss. Der erste bleibende Zahn ist meistens der erste Backenzahn, auch 'Sechsjahrmolar' genannt. Das bleibende Gebiss besteht aus 32 Zähnen. Das sind 12 Zähne mehr als im Milchgebiss."
+    },
+    {
+      "title": "Milchzähne",
+      "content": "Milchzähne sind die ersten Zähne, die wir vom Kleinkindalter bis zum frühen Erwachsenenalter haben. Es sind insgesamt 20 Milchzähne. Zwischen dem 12. und 17. Lebensjahr wird der Wechsel von Milchzähnen zu bleibenden Zähnen abgeschlossen."
+    },
+    {
+      "title": "Zahnaufbau",
+      "content": "Der Aufbau unserer Zähne ist ebenso beeindruckend wie komplex. Sie bestehen aus verschiedenen Schichten und Materialien, die eine wichtige Rolle in ihrer Funktion spielen.",
+      "subsections": [
+        {
+          "title": "Zahnschmelz",
+          "content": "Als Zahnschmelz bezeichnet man die äussere Schicht der Zähne. Zahnschmelz ist das härteste Gewebe im menschlichen Körper. Es ist säurelöslich, kann nicht nachgebildet werden. Auch eine Karies im Schmelz kann Schmerzen verursachen. Um den Zahnschmelz vor Säureangriffen zu schützen, sind eine tägliche Mundhygiene und zuckerarme Ernährung wichtig."
+        },
+        {
+          "title": "Dentin/Zahnbein",
+          "content": "Das Zahnbein ist der Hauptbestandteil unserer Zähne. Es besteht aus mineralischen und organischen Bestandteilen. Das Zahnbein, auch Dentin genannt, liegt unterhalb des Zahnschmelzes. Im Gegensatz zum Zahnschmelz kann Dentin vom Körper neu gebildet werden. Das Dentin umschliesst das Zahnmark und wird im Bereich der Zahnwurzel vom Zement begrenzt. Dentin ist eine knochenähnliche Substanz und hat eine gelbliche Farbe."
+        },
+        {
+          "title": "Zahnwurzel",
+          "content": "Die Zahnwurzel befindet sich unterhalb der Zahnkrone und verankert den Zahn im Zahnfach. Durch die Zahnwurzeln verlaufen Blutgefässe und Nervenfasern. Diese treten durch eine Öffnung aus und gehen in den Alveolarknochen über. Nicht jeder Zahn hat gleich viele Wurzeln. Schneidezähne und Eckzähne haben nur eine und Backenzähne haben zwei bis drei Wurzeln."
+        },
+        {
+          "title": "Zahnhals",
+          "content": "Der Zahnhals ist der Übergang zwischen Zahnkrone und Zahnwurzel. Im Zahnhalsbereich läuft der Zahnschmelz aus und ist dort am dünnsten. Der Zahnhals verläuft nicht gerade um den Zahn, sondern hat verschiedene Höhen. An der Kontaktstelle mit dem Nachbarzahn geht der Zahnhals am weitesten Richtung Zahnkrone. Bei einem gesunden Gebiss sind die Zahnhälse mit Zahnfleisch bedeckt. Durch bestimmte Erkrankungen oder falsche Putztechnik kann das Zahnfleisch abflachen und die Zahnhälse freilegen."
+        },
+        {
+          "title": "Zahnmark/Pulpa",
+          "content": "Zahnmark, auch Pulpa genannt, füllt das Innere des Zahnes aus. Es reicht von der Zahnkrone bis in den Wurzelbereich. Das Zahnmark besteht aus Lymph- und Blutgefässen, Bindegewebe und Nervenfasern."
+        },
+        {
+          "title": "Zahnzement",
+          "content": "Das Zement befindet sich im Zahnwurzelbereich und liegt auf dem Dentin. Es gehört zum Zahnhalteapparat. Das Zahnzement umgibt die Aussenseite des Wurzelbereiches und grenzt die Zahnwurzel vom Zahnfleisch und Kieferknochen ab."
+        }
       ]
     },
     {
-      "title": "3. Die Funktion der Zähne",
-      "content": "Jede Zahnart hat eine spezifische Funktion, die zusammen ein optimales Kauen und Verdauen ermöglicht:",
-      "items": [
-        "Abbeißen: Schneidezähne schneiden Nahrung in handhabbare Stücke.",
-        "Reißen: Eckzähne zerkleinern härtere Nahrung wie Fleisch.",
-        "Zermahlen: Vormahl- und Backenzähne zermahlen die Nahrung zu feinen Partikeln."
+      "title": "Strukturen des Gebisses",
+      "content": "Unser Gebiss ist ein erstaunliches Zusammenspiel verschiedener Strukturen, die es uns ermöglichen, Nahrung zu kauen, zu sprechen und unser Gesicht zu formen.",
+      "subsections": [
+        {
+          "title": "Hauptfunktionen des Gebisses",
+          "items": [
+            "Kauen und Zerkleinern von Nahrung",
+            "Artikulation und Aussprache"
+          ]
+        },
+        {
+          "title": "Oberkiefer",
+          "content": "Der Oberkiefer ist ein Knochen des Gesichtsschädels und bildet das untere Ende der Augenhöhle sowie die Seitenwand der Nasenhöhle und einen Teil des Gaumens. Ein Teil des Oberkiefers ist der Alveolarknochen, der die Zahntaschen beinhaltet."
+        },
+        {
+          "title": "Unterkiefer",
+          "content": "Der Unterkiefer ist ein Knochen des Gesichtsschädels und bildet beim Menschen den beweglichen Teil des Kauapparates. Ein Teil des Unterkiefers ist der Alveolarknochen, welcher die Zahntaschen beinhaltet. Der Unterkiefer ist über das Kiefergelenk mit dem restlichen Schädel verbunden."
+        },
+        {
+          "title": "Zahnfach/Zahnfächer",
+          "content": "Das Zahnfach wird auch Alveole genannt und ist die Vertiefung im Kiefer, in welcher die Wurzel eines Zahnes steckt. Der Teil des Kiefers, in dem sich die Zahnfächer befinden, ist der Alveolarfortsatz (auch Alveolarknochen). Zahnfächer befinden sich im Ober- und Unterkiefer. Zusammen mit dem Zahnfleisch, dem Zahnzement und der Wurzelhaut gehört die Alveole zum Zahnhalteapparat."
+        },
+        {
+          "title": "Alveolarknochen",
+          "content": "Der Alveolarknochen ist der Bereich im Ober- und Unterkiefer, wo sich die Zahnfächer (Alveolen) befinden. In den Zahnfächern sind die Zähne verwurzelt. Bei Zahnverlust wird der Alveolarknochen zu einem schmalen Kamm zurückgebildet. Ohne prothetische Versorgung hat dies einen Höhenverlust des Untergesichts zur Folge."
+        }
       ]
     },
     {
-      "title": "4. Zahnbogen und Biss",
-      "content": "Die Zähne sind in einem harmonischen Zahnbogen angeordnet, der Ober- und Unterkiefer miteinander verbindet. Ein gesunder Biss (Okklusion) sorgt für optimale Kaukraft und verhindert Abnutzung oder Schmerzen im Kiefer."
-    },
-    {
-      "title": "5. Häufige Probleme und Krankheiten",
-      "items": [
-        "Karies: Entsteht durch Säureangriffe auf den Zahnschmelz. Vorbeugung: Regelmäßige Zahnpflege, fluoridhaltige Zahnpasta und gesunde Ernährung.",
-        "Zahnfleischentzündung (Gingivitis): Rötung, Schwellung und Blutung des Zahnfleischs. Ursache: Plaque-Bakterien.",
-        "Parodontitis: Fortschreitende Zahnfleischentzündung, die den Kieferknochen angreift. Kann zu Zahnverlust führen."
-      ]
-    },
-    {
-      "title": "6. Tipps zur Zahnpflege",
-      "items": [
-        "Zweimal täglich Zähneputzen: Mindestens zwei Minuten mit einer fluoridhaltigen Zahnpasta.",
-        "Zahnseide oder Interdentalbürsten: Reinigung der Zahnzwischenräume.",
-        "Mundspülungen: Reduziert Bakterien im Mundraum.",
-        "Zahnarztbesuche: Regelmäßige Kontrolluntersuchungen, um Probleme frühzeitig zu erkennen."
-      ]
-    },
-    {
-      "title": "7. Wussten Sie schon?",
-      "items": [
-        "Der Zahnschmelz ist härter als Knochen, aber nicht regenerierbar.",
-        "Ein Mensch verbringt im Durchschnitt 38 Tage seines Lebens mit Zähneputzen.",
-        "Karies gehört zu den häufigsten Erkrankungen weltweit."
-      ]
-    },
-    {
-      "title": "8. Interaktive Zahnanatomie",
-      "content": "Nutzen Sie unser interaktives 3D-Modell, um:",
-      "items": [
-        "Die Schichten und Teile eines Zahns zu erkunden.",
-        "Den Aufbau verschiedener Zahnarten zu vergleichen.",
-        "Ihre Zahngesundheit besser zu verstehen."
+      "title": "Kaumuskulatur und Kiefergelenk",
+      "content": "Die Kaumuskulatur ist für die Beweglichkeit des Unterkiefers verantwortlich. Das Kiefergelenk ermöglicht es uns, die Zähne miteinander in Kontakt zu bringen und Nahrung zu zerkleinern.",
+      "subsections": [
+        {
+          "title": "Kaumuskulatur",
+          "content": "Die Kaumuskulatur besteht aus mehreren Muskeln, die den Unterkiefer bewegen. Diese Muskeln sind wichtig, um die Zähne während des Kauens zu stabilisieren und zu unterstützen."
+        },
+        {
+          "title": "Kiefergelenk",
+          "content": "Das Kiefergelenk ist das Gelenk, das den Unterkiefer mit dem Schädelskelett verbindet. Es ermöglicht die Beweglichkeit des Unterkiefers und ist entscheidend für die Funktion des Kauapparates."
+        }
       ]
     }
   ]
