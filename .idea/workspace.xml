@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ff878f9e-7263-4351-b0f2-cc9719de755e" name="Changes" comment="Content JSON">
+      <change afterPath="$PROJECT_DIR$/src/javascript/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DentaView-Die4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/2-advanced-examples/Quiztest.cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/e2e/2-advanced-examples/WebTest.cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/fixtures/quiz.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/support/e2e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keinea.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javascript/ThreeDModel.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="tsconfig.json" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sudeyildiz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sudeyildiz/DentaView-Die4.git&quot;,
+    &quot;accountId&quot;: &quot;81fbefb2-dcc0-4693-ac12-43455de3ce22&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2rGwq8UHKfYBsnkgYhKGWN0vZco" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.ThreeDModel.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;datenbank&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/suden/DentaView-Die4/backend/backend&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\suden\DentaView-Die4\backend\backend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\suden\DentaView-Die4\Frontend" />
+      <recent name="C:\Users\suden\DentaView-Die4\backend" />
+      <recent name="C:\Users\suden\DentaView-Die4\backend\" />
+      <recent name="C:\Users\suden\DentaView-Die4\backend\backend" />
+      <recent name="C:\Users\suden\DentaView-Die4\src" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff878f9e-7263-4351-b0f2-cc9719de755e" name="Changes" comment="" />
+      <created>1736198907838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736198907838</updated>
+      <workItem from="1736198908932" duration="12824000" />
+      <workItem from="1736266058506" duration="22912000" />
+      <workItem from="1736495879051" duration="3767000" />
+      <workItem from="1736542649151" duration="2329000" />
+      <workItem from="1736603159906" duration="1304000" />
+      <workItem from="1736604837086" duration="991000" />
+      <workItem from="1736638120621" duration="3536000" />
+      <workItem from="1736724485898" duration="3254000" />
+      <workItem from="1736864457977" duration="1130000" />
+      <workItem from="1742914941281" duration="8843000" />
+      <workItem from="1743515985985" duration="5959000" />
+      <workItem from="1743586351488" duration="8541000" />
+      <workItem from="1744099218266" duration="728000" />
+      <workItem from="1744197177555" duration="2845000" />
+      <workItem from="1744280313663" duration="472000" />
+    </task>
+    <task id="LOCAL-00001" summary="Header Design">
+      <option name="closed" value="true" />
+      <created>1736268416886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736268416886</updated>
+    </task>
+    <task id="LOCAL-00002" summary="design yildiz">
+      <option name="closed" value="true" />
+      <created>1736327208869</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736327208869</updated>
+    </task>
+    <task id="LOCAL-00003" summary="design2">
+      <option name="closed" value="true" />
+      <created>1736327400452</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736327400452</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Design">
+      <option name="closed" value="true" />
+      <created>1736357338858</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736357338858</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Content JSON">
+      <option name="closed" value="true" />
+      <created>1736428023903</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736428023903</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Header Design" />
+    <MESSAGE value="design yildiz" />
+    <MESSAGE value="design2" />
+    <MESSAGE value="Design" />
+    <MESSAGE value="Content JSON" />
+    <option name="LAST_COMMIT_MESSAGE" value="Content JSON" />
+  </component>
+</project>

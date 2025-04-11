@@ -1,10 +1,30 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
+// Cache für das vorgeladene Modell
+let cachedModel = null;
+
+// Funktion zum Vorladen des Modells
+const preloadModel = (url) => {
+    const loader = new GLTFLoader();
+    return new Promise((resolve, reject) => {
+        loader.load(
+            url,
+            (gltf) => {
+                cachedModel = gltf.scene; // Speichere das Modell im Cache
+                resolve(cachedModel);
+            },
+            undefined,
+            (error) => reject(error)
+        );
+    });
+};
+
 const ThreeDModel = () => {
     const mountRef = useRef(null);
+    const [modelLoaded, setModelLoaded] = useState(false);
 
     useEffect(() => {
         // Szene, Kamera und Renderer erstellen
@@ -40,19 +60,21 @@ const ThreeDModel = () => {
         directionalLight.position.set(10, 10, 10);
         scene.add(directionalLight);
 
-        // GLTFLoader verwenden
-        const loader = new GLTFLoader();
-        loader.load(
-            '/chemicals_opaque_test_v2.1.glb',
-            (gltf) => {
-                const model = gltf.scene;
-                model.scale.set(5, 5, 5);
-                model.position.set(0, -2, 0);
-                scene.add(model);
-            },
-            (xhr) => console.log((xhr.loaded / xhr.total) * 100 + '% geladen'),
-            (error) => console.error('Fehler beim Laden des 3D-Modells', error)
-        );
+        // Vorgeladenes Modell verwenden oder laden
+        const loadModel = async () => {
+            let model;
+            if (cachedModel) {
+                model = cachedModel.clone(); // Klone das vorgeladene Modell
+            } else {
+                model = await preloadModel('/chemicals_opaque_test_v2.1.glb');
+            }
+            model.scale.set(5, 5, 5);
+            model.position.set(0, -2, 0);
+            scene.add(model);
+            setModelLoaded(true);
+        };
+
+        loadModel();
 
         // Animation
         const animate = () => {
@@ -96,6 +118,7 @@ const ThreeDModel = () => {
                 }}
             >
                 <div ref={mountRef} style={{ width: '100%', height: '100%' }} />
+                {!modelLoaded && <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>Lädt 3D-Modell...</div>}
             </main>
         </div>
     );
