@@ -1,0 +1,31 @@
+{
+  "projektteam": "Projektteam DentaView",
+  "address": "HTBLuVA Spengergasse\n1050 Wien, Österreich",
+  "kontaktTitle": "Kontakt",
+  "contacts": [
+    {
+      "email": "lea210449@spengergasse.at"
+    },
+    {
+      "email": "hri210451@spengergasse.at"
+    },
+    {
+      "email": "yil210462@spengergasse.at"
+    },
+    {
+      "email": "yil210461@spengergasse.at"
+    }
+  ],
+  "dsgvoTitle": "DSGVO Hinweise",
+  "dsgvoText": "Wir halten uns strikt an die Datenschutzgrundverordnung (DSGVO). Weitere Informationen finden Sie in den offiziellen Dokumenten:",
+  "links": [
+    {
+      "text": "Datenschutzerklärung der HTL Spengergasse",
+      "url": "https://www.spengergasse.at/?page_id=2029"
+    },
+    {
+      "text": "Impressum der HTL Spengergasse",
+      "url": "https://www.spengergasse.at/?page_id=2030"
+    }
+  ]
+}

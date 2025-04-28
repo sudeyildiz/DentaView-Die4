@@ -4,8 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff878f9e-7263-4351-b0f2-cc9719de755e" name="Changes" comment="Sufolder delete">
+    <list default="true" id="ff878f9e-7263-4351-b0f2-cc9719de755e" name="Changes" comment="Sufolder delete v2">
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/BeitragController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/ImpressumController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/QuestionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/QuizController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/SectionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/SubsectionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Beitrag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Impressum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Link.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Quiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Section.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Subsection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/BeitragRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/ImpressumRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/QuestionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/QuizRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/SectionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/SubsectionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/JsonDataLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/Beitrag1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/Beitrag2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/Impressum.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/quiz.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DentaView/DentaViewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/BackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/public/json/quiz.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/public/json/quiz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DentaView/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DentaView/probe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +52,9 @@
         <option value="CSS File" />
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
+        <option value="AnnotationType" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,12 +72,19 @@
     &quot;assignee&quot;: &quot;sudeyildiz&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sudeyildiz/DentaView-Die4.git",
-    "accountId": "88c1a7f6-0844-45ae-a21e-1ea5a868f63c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sudeyildiz/DentaView-Die4.git&quot;,
+    &quot;accountId&quot;: &quot;88c1a7f6-0844-45ae-a21e-1ea5a868f63c&quot;
   }
-}]]></component>
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -51,8 +95,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
     "Node.js.ThreeDModel.js.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.BackendApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Klara/OneDrive/Desktop/3AHBGM/mgin/DentaView-Die4/Backend",
@@ -62,21 +115,49 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="DentaView.model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Klara\OneDrive\Desktop\3AHBGM\mgin\DentaView-Die4\Backend" />
+      <recent name="C:\Users\Klara\OneDrive\Desktop\3AHBGM\mgin\DentaView-Die4\Backend\src\main\resources" />
       <recent name="C:\Users\suden\DentaView-Die4\backend\backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Klara\OneDrive\Desktop\3AHBGM\mgin\DentaView-Die4\Backend" />
+      <recent name="C:\Users\Klara\OneDrive\Desktop\3AHBGM\mgin\DentaView-Die4\Backend\src\main\resources\json" />
+      <recent name="C:\Users\Klara\OneDrive\Desktop\3AHBGM\mgin\DentaView-Die4\Backend\src\main\resources" />
       <recent name="C:\Users\suden\DentaView-Die4\Frontend" />
       <recent name="C:\Users\suden\DentaView-Die4\backend" />
-      <recent name="C:\Users\suden\DentaView-Die4\backend\" />
-      <recent name="C:\Users\suden\DentaView-Die4\backend\backend" />
-      <recent name="C:\Users\suden\DentaView-Die4\src" />
     </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BackendApplication">
+    <configuration name="BackendApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backend.BackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backend.BackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -109,7 +190,9 @@
       <workItem from="1744099218266" duration="728000" />
       <workItem from="1744197177555" duration="2845000" />
       <workItem from="1744280313663" duration="472000" />
-      <workItem from="1745762158971" duration="809000" />
+      <workItem from="1745762158971" duration="10487000" />
+      <workItem from="1745842996337" duration="8812000" />
+      <workItem from="1745854439139" duration="9199000" />
     </task>
     <task id="LOCAL-00001" summary="Header Design">
       <option name="closed" value="true" />
@@ -159,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745762682611</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Sufolder delete v2">
+      <option name="closed" value="true" />
+      <created>1745762995961</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745762995961</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +274,7 @@
     <MESSAGE value="Design" />
     <MESSAGE value="Content JSON" />
     <MESSAGE value="Sufolder delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sufolder delete" />
+    <MESSAGE value="Sufolder delete v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sufolder delete v2" />
   </component>
 </project>
