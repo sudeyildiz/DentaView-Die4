@@ -15,10 +15,11 @@ import org.springframework.stereotype.Component;
 import jakarta.annotation.PostConstruct;
 import java.io.InputStream;
 
-@Component
+//@Component
 public class JsonDataLoader {
 
     private static final Logger log = LoggerFactory.getLogger(JsonDataLoader.class);
+
     private final BeitragRepository beitragRepo;
     private final QuizRepository quizRepo;
     private final ImpressumRepository impRepo;
@@ -33,35 +34,42 @@ public class JsonDataLoader {
     }
 
     @PostConstruct
-    public void loadData() throws Exception {
+    public void loadData() {
         log.info("🔄 Starte JSON-Ladeprozess…");
+        try {
+            // Beitrag1
+            try (InputStream is1 = new ClassPathResource("Beitrag1.json").getInputStream()) {
+                Beitrag b1 = mapper.readValue(is1, Beitrag.class);
+                beitragRepo.save(b1);
+            }
 
-        // Beitrag1 laden
-        InputStream is1 = new ClassPathResource("Beitrag1.json").getInputStream();
-        Beitrag beitrag1 = mapper.readValue(is1, Beitrag.class);
-        beitragRepo.save(beitrag1);
+            // Beitrag2
+            try (InputStream is2 = new ClassPathResource("Beitrag2.json").getInputStream()) {
+                Beitrag b2 = mapper.readValue(is2, Beitrag.class);
+                beitragRepo.save(b2);
+            }
 
-        // Beitrag2 laden
-        InputStream is2 = new ClassPathResource("Beitrag2.json").getInputStream();
-        Beitrag beitrag2 = mapper.readValue(is2, Beitrag.class);
-        beitragRepo.save(beitrag2);
+            log.info("✅ Beiträge gespeichert: {}", beitragRepo.count());
 
-        log.info("✅ Beiträge geladen und gespeichert: {}", beitragRepo.count());
+            // Quiz
+            try (InputStream isQuiz = new ClassPathResource("quiz.json").getInputStream()) {
+                Quiz q = mapper.readValue(isQuiz, Quiz.class);
+                quizRepo.save(q);
+            }
 
-        // Quiz laden
-        InputStream isQuiz = new ClassPathResource("quiz.json").getInputStream();
-        Quiz quiz = mapper.readValue(isQuiz, Quiz.class);
-        quizRepo.save(quiz);
+            log.info("✅ Quiz gespeichert: {}", quizRepo.count());
 
-        log.info("✅ Quiz geladen und gespeichert: {}", quizRepo.count());
+            // Impressum
+            try (InputStream isImp = new ClassPathResource("Impressum.json").getInputStream()) {
+                Impressum i = mapper.readValue(isImp, Impressum.class);
+                impRepo.save(i);
+            }
 
-        // Impressum laden
-        InputStream isImp = new ClassPathResource("Impressum.json").getInputStream();
-        Impressum impressum = mapper.readValue(isImp, Impressum.class);
-        impRepo.save(impressum);
+            log.info("✅ Impressum gespeichert: {}", impRepo.count());
 
-        log.info("✅ Impressum geladen und gespeichert: {}", impRepo.count());
-
-        log.info("🎉 JSON-Ladeprozess abgeschlossen!");
+            log.info("🎉 JSON-Ladeprozess abgeschlossen!");
+        } catch (Exception e) {
+            log.error("❌ Fehler beim Laden der JSON-Daten – ladeprozess abgebrochen, Server bleibt aber up.", e);
+        }
     }
 }
