@@ -5,6 +5,7 @@ import java.util.List;
 
 @Entity
 public class Impressum {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -12,90 +13,42 @@ public class Impressum {
     private String projektteam;
     private String address;
     private String kontaktTitle;
-
-    @ElementCollection
-    @CollectionTable(
-            name = "impressum_contacts",
-            joinColumns = @JoinColumn(name = "impressum_id")
-    )
-    @Column(name = "email")
-    private List<String> contacts;
-
     private String dsgvoTitle;
-
-    @Column(length = 2000)
     private String dsgvoText;
 
     @ElementCollection
-    @CollectionTable(
-            name = "impressum_links",
-            joinColumns = @JoinColumn(name = "impressum_id")
-    )
+    @CollectionTable(name = "impressum_contacts", joinColumns = @JoinColumn(name = "impressum_id"))
+    private List<Contact> contacts;
+
+    @ElementCollection
+    @CollectionTable(name = "impressum_links", joinColumns = @JoinColumn(name = "impressum_id"))
     private List<Link> links;
 
     public Impressum() {}
 
-    public Long getId() {
-        return id;
-    }
+    // Getter & Setter
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
-    public String getProjektteam() {
-        return projektteam;
-    }
+    public String getProjektteam() { return projektteam; }
+    public void setProjektteam(String projektteam) { this.projektteam = projektteam; }
 
-    public void setProjektteam(String projektteam) {
-        this.projektteam = projektteam;
-    }
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
 
-    public String getAddress() {
-        return address;
-    }
+    public String getKontaktTitle() { return kontaktTitle; }
+    public void setKontaktTitle(String kontaktTitle) { this.kontaktTitle = kontaktTitle; }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
+    public String getDsgvoTitle() { return dsgvoTitle; }
+    public void setDsgvoTitle(String dsgvoTitle) { this.dsgvoTitle = dsgvoTitle; }
 
-    public String getKontaktTitle() {
-        return kontaktTitle;
-    }
+    public String getDsgvoText() { return dsgvoText; }
+    public void setDsgvoText(String dsgvoText) { this.dsgvoText = dsgvoText; }
 
-    public void setKontaktTitle(String kontaktTitle) {
-        this.kontaktTitle = kontaktTitle;
-    }
+    public List<Contact> getContacts() { return contacts; }
+    public void setContacts(List<Contact> contacts) { this.contacts = contacts; }
 
-    public List<String> getContacts() {
-        return contacts;
-    }
-
-    public void setContacts(List<String> contacts) {
-        this.contacts = contacts;
-    }
-
-    public String getDsgvoTitle() {
-        return dsgvoTitle;
-    }
-
-    public void setDsgvoTitle(String dsgvoTitle) {
-        this.dsgvoTitle = dsgvoTitle;
-    }
-
-    public String getDsgvoText() {
-        return dsgvoText;
-    }
-
-    public void setDsgvoText(String dsgvoText) {
-        this.dsgvoText = dsgvoText;
-    }
-
-    public List<Link> getLinks() {
-        return links;
-    }
-
-    public void setLinks(List<Link> links) {
-        this.links = links;
-    }
+    public List<Link> getLinks() { return links; }
+    public void setLinks(List<Link> links) { this.links = links; }
 }

@@ -2,28 +2,40 @@ package com.example.backend.entity;
 
 import jakarta.persistence.*;
 import java.util.List;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.example.backend.util.ContentDeserializer;
 
 @Entity
 public class Subsection {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
 
-    @Column(length = 2000)
-    private String content;
+    // content kann entweder ein einzelner String oder ein Array sein
+    @ElementCollection
+    @CollectionTable(
+            name = "subsection_content",
+            joinColumns = @JoinColumn(name = "subsection_id")
+    )
+    @Column(name = "line", length = 2000)
+    @JsonDeserialize(using = ContentDeserializer.class)
+    private List<String> content;
 
+    // optionale Liste von Items (z. B. bei Aufzählungen)
     @ElementCollection
     @CollectionTable(
             name = "subsection_items",
             joinColumns = @JoinColumn(name = "subsection_id")
     )
-    @Column(name = "item")
+    @Column(name = "item", length = 2000)
     private List<String> items;
 
     public Subsection() {}
 
+    // Getter & Setter
     public Long getId() {
         return id;
     }
@@ -40,11 +52,11 @@ public class Subsection {
         this.title = title;
     }
 
-    public String getContent() {
+    public List<String> getContent() {
         return content;
     }
 
-    public void setContent(String content) {
+    public void setContent(List<String> content) {
         this.content = content;
     }
 

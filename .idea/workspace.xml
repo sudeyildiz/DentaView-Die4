@@ -4,42 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff878f9e-7263-4351-b0f2-cc9719de755e" name="Changes" comment="Sufolder delete v2">
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/BeitragController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/ImpressumController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/QuestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/QuizController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/SectionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/SubsectionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Beitrag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Impressum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Quiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Section.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Subsection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/BeitragRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/ImpressumRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/QuestionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/QuizRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/SectionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/SubsectionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/JsonDataLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/Beitrag1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/Beitrag2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/Impressum.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/resources/quiz.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DentaView/DentaViewApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="ff878f9e-7263-4351-b0f2-cc9719de755e" name="Changes" comment="@Component auskommentiert im JsonDataLoader für ein Aufgabe mit erkannten Json- Dateien">
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/UserAnswerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/dto/UserAnswerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/UserAnswer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/repository/UserAnswerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/ImpressumDataLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/QuizDataLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/util/ContentDeserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/BackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/BackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/public/json/quiz.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/public/json/quiz.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DentaView/demo/DemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DentaView/probe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/QuizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/QuizController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Impressum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Impressum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Section.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Section.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Subsection.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/entity/Subsection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/JsonDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/JsonDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/Beitrag2.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/resources/Beitrag2.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +61,10 @@
     &quot;accountId&quot;: &quot;88c1a7f6-0844-45ae-a21e-1ea5a868f63c&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -192,7 +179,7 @@
       <workItem from="1744280313663" duration="472000" />
       <workItem from="1745762158971" duration="10487000" />
       <workItem from="1745842996337" duration="8812000" />
-      <workItem from="1745854439139" duration="9199000" />
+      <workItem from="1745854439139" duration="26963000" />
     </task>
     <task id="LOCAL-00001" summary="Header Design">
       <option name="closed" value="true" />
@@ -250,7 +237,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745762995961</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Datenbankanbindung hergestellt und mit h2 überprüft, Entitäten,Controller,Repositorys, Servide hinzugefügt, json applications konfiguriert, dependencies eingefügt in das pom.xml,">
+      <option name="closed" value="true" />
+      <created>1745864613957</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745864613957</updated>
+    </task>
+    <task id="LOCAL-00009" summary="@Component auskommentiert im JsonDataLoader für ein Aufgabe mit erkannten Json- Dateien">
+      <option name="closed" value="true" />
+      <created>1745923357109</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745923357109</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +278,8 @@
     <MESSAGE value="Content JSON" />
     <MESSAGE value="Sufolder delete" />
     <MESSAGE value="Sufolder delete v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sufolder delete v2" />
+    <MESSAGE value="Datenbankanbindung hergestellt und mit h2 überprüft, Entitäten,Controller,Repositorys, Servide hinzugefügt, json applications konfiguriert, dependencies eingefügt in das pom.xml," />
+    <MESSAGE value="@Component auskommentiert im JsonDataLoader für ein Aufgabe mit erkannten Json- Dateien" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Component auskommentiert im JsonDataLoader für ein Aufgabe mit erkannten Json- Dateien" />
   </component>
 </project>

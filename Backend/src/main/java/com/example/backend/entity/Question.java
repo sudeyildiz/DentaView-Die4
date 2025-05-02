@@ -1,27 +1,28 @@
 package com.example.backend.entity;
 
 import jakarta.persistence.*;
-
-
 import java.util.List;
 
 @Entity
 public class Question {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(length = 1000)
     private String question;
+
     private String correctAnswer;
 
     @ElementCollection
-    @CollectionTable(
-            name = "question_options",
-            joinColumns = @JoinColumn(name = "question_id")
-    )
+    @CollectionTable(name = "question_options", joinColumns = @JoinColumn(name = "question_id"))
     @Column(name = "option_text")
     private List<String> options;
+
+    @ManyToOne
+    @JoinColumn(name = "quiz_id")
+    private Quiz quiz;
 
     public Question() {}
 
@@ -55,5 +56,13 @@ public class Question {
 
     public void setOptions(List<String> options) {
         this.options = options;
+    }
+
+    public Quiz getQuiz() {
+        return quiz;
+    }
+
+    public void setQuiz(Quiz quiz) {
+        this.quiz = quiz;
     }
 }

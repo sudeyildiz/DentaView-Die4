@@ -1,75 +1,51 @@
 package com.example.backend.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.example.backend.entity.Beitrag;
-import com.example.backend.entity.Quiz;
-import com.example.backend.entity.Impressum;
 import com.example.backend.repository.BeitragRepository;
-import com.example.backend.repository.QuizRepository;
-import com.example.backend.repository.ImpressumRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.core.io.ClassPathResource;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
 import jakarta.annotation.PostConstruct;
+import java.io.IOException;
 import java.io.InputStream;
 
-//@Component
+@Component
 public class JsonDataLoader {
 
-    private static final Logger log = LoggerFactory.getLogger(JsonDataLoader.class);
+    private final BeitragRepository beitragRepository;
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
-    private final BeitragRepository beitragRepo;
-    private final QuizRepository quizRepo;
-    private final ImpressumRepository impRepo;
-    private final ObjectMapper mapper = new ObjectMapper();
+    // JSON-Dateien im Backend unter: src/main/resources/
+    @Value("classpath:beitrag1.json")
+    private Resource beitrag1;
 
-    public JsonDataLoader(BeitragRepository beitragRepo,
-                          QuizRepository quizRepo,
-                          ImpressumRepository impRepo) {
-        this.beitragRepo = beitragRepo;
-        this.quizRepo = quizRepo;
-        this.impRepo = impRepo;
+    @Value("classpath:beitrag2.json")
+    private Resource beitrag2;
+
+    public JsonDataLoader(BeitragRepository beitragRepository) {
+        this.beitragRepository = beitragRepository;
     }
 
     @PostConstruct
-    public void loadData() {
-        log.info("🔄 Starte JSON-Ladeprozess…");
+    public void loadJsonData() {
         try {
-            // Beitrag1
-            try (InputStream is1 = new ClassPathResource("Beitrag1.json").getInputStream()) {
-                Beitrag b1 = mapper.readValue(is1, Beitrag.class);
-                beitragRepo.save(b1);
-            }
-
-            // Beitrag2
-            try (InputStream is2 = new ClassPathResource("Beitrag2.json").getInputStream()) {
-                Beitrag b2 = mapper.readValue(is2, Beitrag.class);
-                beitragRepo.save(b2);
-            }
-
-            log.info("✅ Beiträge gespeichert: {}", beitragRepo.count());
-
-            // Quiz
-            try (InputStream isQuiz = new ClassPathResource("quiz.json").getInputStream()) {
-                Quiz q = mapper.readValue(isQuiz, Quiz.class);
-                quizRepo.save(q);
-            }
-
-            log.info("✅ Quiz gespeichert: {}", quizRepo.count());
-
-            // Impressum
-            try (InputStream isImp = new ClassPathResource("Impressum.json").getInputStream()) {
-                Impressum i = mapper.readValue(isImp, Impressum.class);
-                impRepo.save(i);
-            }
-
-            log.info("✅ Impressum gespeichert: {}", impRepo.count());
-
-            log.info("🎉 JSON-Ladeprozess abgeschlossen!");
+            loadBeitraege(beitrag1);
+            loadBeitraege(beitrag2);
+            System.out.println("✅ JSON-Daten erfolgreich geladen und gespeichert.");
         } catch (Exception e) {
-            log.error("❌ Fehler beim Laden der JSON-Daten – ladeprozess abgebrochen, Server bleibt aber up.", e);
+            System.err.println("❌ Fehler beim Laden der JSON-Daten: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    private void loadBeitraege(Resource resource) throws IOException {
+        try (InputStream is = resource.getInputStream()) {
+            System.out.println("📄 Lade Datei: " + resource.getFilename());
+            Beitrag beitrag = objectMapper.readValue(is, new TypeReference<Beitrag>() {});
+            beitragRepository.save(beitrag);
         }
     }
 }

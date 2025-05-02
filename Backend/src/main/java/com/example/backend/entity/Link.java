@@ -1,9 +1,10 @@
 package com.example.backend.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class Link {
+
     private String text;
     private String url;
 

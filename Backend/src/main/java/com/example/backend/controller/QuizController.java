@@ -1,4 +1,3 @@
-// src/main/java/com/example/backend/controller/QuizController.java
 package com.example.backend.controller;
 
 import com.example.backend.entity.Quiz;
@@ -11,33 +10,30 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/quizzes")
 public class QuizController {
-    private final QuizRepository repo;
 
-    public QuizController(QuizRepository repo) {
-        this.repo = repo;
+    private final QuizRepository quizRepository;
+
+    public QuizController(QuizRepository quizRepository) {
+        this.quizRepository = quizRepository;
     }
 
+    // Alle Quizzes abrufen (inkl. Fragen)
     @GetMapping
-    public List<Quiz> list() {
-        return repo.findAll();
+    public List<Quiz> getAllQuizzes() {
+        return quizRepository.findAll();
     }
 
+    // Ein Quiz per ID abrufen
     @GetMapping("/{id}")
-    public ResponseEntity<Quiz> get(@PathVariable Long id) {
-        return repo.findById(id)
+    public ResponseEntity<Quiz> getQuizById(@PathVariable Long id) {
+        return quizRepository.findById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    // Optional: Neues Quiz inkl. Fragen anlegen (wenn gewünscht)
     @PostMapping
-    public Quiz create(@RequestBody Quiz quiz) {
-        return repo.save(quiz);
-    }
-
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> delete(@PathVariable Long id) {
-        if (!repo.existsById(id)) return ResponseEntity.notFound().build();
-        repo.deleteById(id);
-        return ResponseEntity.noContent().build();
+    public Quiz createQuiz(@RequestBody Quiz quiz) {
+        return quizRepository.save(quiz);
     }
 }
