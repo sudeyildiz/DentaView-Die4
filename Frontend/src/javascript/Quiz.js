@@ -7,14 +7,13 @@ const Quiz = () => {
     const [questions, setQuestions] = useState([]);
 
     useEffect(() => {
-        // Lade die Fragen aus der JSON-Datei
         fetch('/json/quiz.json')
             .then(response => response.json())
             .then(data => setQuestions(data.questions))
             .catch(error => console.error('Fehler beim Laden der Quiz-Daten:', error));
     }, []);
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
 
         let currentScore = 0;
@@ -22,17 +21,38 @@ const Quiz = () => {
 
         for (let i = 0; i < questions.length; i++) {
             const question = questions[i];
-            const selectedAnswer = document.querySelector(`input[name="q${i + 1}"]:checked`);
-            if (selectedAnswer) {
-                const isCorrect = selectedAnswer.value === question.correctAnswer;
+            const selectedAnswerInput = document.querySelector(`input[name="q${i + 1}"]:checked`);
+
+            if (selectedAnswerInput) {
+                const selectedAnswer = selectedAnswerInput.value;
+                const isCorrect = selectedAnswer === question.correctAnswer;
+
+                // Zähle Punkte
                 if (isCorrect) {
                     currentScore++;
                 } else {
                     incorrects.push({
                         question: question.question,
-                        selectedAnswer: selectedAnswer.nextSibling.textContent.trim(),
+                        selectedAnswer: selectedAnswerInput.nextSibling.textContent.trim(),
                         correctAnswer: question.correctAnswer
                     });
+                }
+
+                // ✅ API-Aufruf: Antwort an Backend senden
+                try {
+                    await fetch("http://localhost:8080/api/user-answers", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({
+                            questionId: question.id,              // ← muss im Backend existieren
+                            selectedAnswer: selectedAnswer,
+                            username: "klara"                      // ← später dynamisch
+                        }),
+                    });
+                } catch (err) {
+                    console.error(`Fehler beim Speichern der Antwort zu Frage ${question.id}:`, err);
                 }
             }
         }

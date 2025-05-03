@@ -2,7 +2,6 @@ package com.example.backend.service;
 
 import com.example.backend.entity.Question;
 import com.example.backend.entity.Quiz;
-import com.example.backend.repository.QuestionRepository;
 import com.example.backend.repository.QuizRepository;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -21,6 +20,7 @@ public class QuizDataLoader {
     private final QuizRepository quizRepository;
     private final ObjectMapper objectMapper = new ObjectMapper();
 
+    // ✅ Anpassung: quiz.json liegt direkt unter resources, nicht in /data
     @Value("classpath:quiz.json")
     private Resource quizJson;
 
@@ -32,16 +32,20 @@ public class QuizDataLoader {
     public void loadQuizData() {
         try (InputStream is = quizJson.getInputStream()) {
 
-            // JSON hat "questions": [...]
+            // Lade die Fragen aus der JSON-Datei (mit "questions"-Array)
             Map<String, List<Question>> quizMap = objectMapper.readValue(is, new TypeReference<>() {});
             List<Question> questions = quizMap.get("questions");
 
-            // Neues Quiz erstellen (z. B. Titel festlegen)
+            // Neues Quiz-Objekt
             Quiz quiz = new Quiz();
-            quiz.setTitle("Zahnwissen"); // Oder dynamisch, falls aus JSON
+            quiz.setId(null);
+            quiz.setTitle("Zahnwissen");
+
             for (Question question : questions) {
-                question.setQuiz(quiz); // Setze Beziehung
+                question.setId(null);            // Wichtig für persist
+                question.setQuiz(quiz);          // Beziehung setzen
             }
+
             quiz.setQuestions(questions);
 
             quizRepository.save(quiz);
