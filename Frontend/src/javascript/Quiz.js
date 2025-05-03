@@ -1,65 +1,64 @@
 import React, { useState, useEffect } from 'react';
 
 const Quiz = () => {
-    const [score, setScore] = useState(0);
-    const [showResult, setShowResult] = useState(false);
-    const [incorrectAnswers, setIncorrectAnswers] = useState([]);
     const [questions, setQuestions] = useState([]);
+    const [userAnswers, setUserAnswers] = useState({});
+    const [correctCount, setCorrectCount] = useState(null);
+    const [message, setMessage] = useState("");
 
     useEffect(() => {
+        // Fetch quiz data from the JSON file
         fetch('/json/quiz.json')
             .then(response => response.json())
-            .then(data => setQuestions(data.questions))
+            .then(data => {
+                console.log("Geladene Fragen:", data.questions); // Debugging
+                setQuestions(data.questions);
+            })
             .catch(error => console.error('Fehler beim Laden der Quiz-Daten:', error));
     }, []);
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-
-        let currentScore = 0;
-        let incorrects = [];
-
-        for (let i = 0; i < questions.length; i++) {
-            const question = questions[i];
-            const selectedAnswerInput = document.querySelector(`input[name="q${i + 1}"]:checked`);
-
-            if (selectedAnswerInput) {
-                const selectedAnswer = selectedAnswerInput.value;
-                const isCorrect = selectedAnswer === question.correctAnswer;
-
-                // Zähle Punkte
-                if (isCorrect) {
-                    currentScore++;
-                } else {
-                    incorrects.push({
-                        question: question.question,
-                        selectedAnswer: selectedAnswerInput.nextSibling.textContent.trim(),
-                        correctAnswer: question.correctAnswer
-                    });
-                }
-
-                // ✅ API-Aufruf: Antwort an Backend senden
-                try {
-                    await fetch("http://localhost:8080/api/user-answers", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify({
-                            questionId: question.id,              // ← muss im Backend existieren
-                            selectedAnswer: selectedAnswer,
-                            username: "klara"                      // ← später dynamisch
-                        }),
-                    });
-                } catch (err) {
-                    console.error(`Fehler beim Speichern der Antwort zu Frage ${question.id}:`, err);
-                }
-            }
+    const handleAnswerChange = (questionId, selectedAnswer) => {
+        if (!questionId) {
+            console.error("Fehler: Frage-ID ist undefined");
+            return;
         }
+        console.log("Frage-ID:", questionId, "Ausgewählte Antwort:", selectedAnswer); // Debugging
+        setUserAnswers(prevAnswers => ({
+            ...prevAnswers,
+            [questionId]: selectedAnswer,
+        }));
+    };
 
-        setScore(currentScore);
-        setIncorrectAnswers(incorrects);
-        setShowResult(true);
+    const handleSaveAnswers = async () => {
+        const username = "exampleUser"; // Replace with dynamic username if available
+        const answersToSave = Object.entries(userAnswers).map(([questionId, selectedAnswer]) => ({
+            questionId: parseInt(questionId, 10),
+            selectedAnswer,
+            username,
+        }));
+
+        try {
+            const response = await fetch('http://localhost:8080/api/user-answers', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(answersToSave),
+            });
+
+            if (response.ok) {
+                const correctCount = await response.json();
+                setCorrectCount(correctCount);
+                setMessage("Antworten erfolgreich gespeichert!");
+            } else {
+                const errorMessage = await response.text();
+                console.error("Fehler beim Speichern der Antworten:", errorMessage);
+                setMessage("Fehler beim Speichern der Antworten: " + errorMessage);
+            }
+        } catch (error) {
+            console.error("Netzwerkfehler:", error);
+            setMessage("Netzwerkfehler: " + error.message);
+        }
     };
 
     if (questions.length === 0) {
@@ -68,40 +67,30 @@ const Quiz = () => {
 
     return (
         <div>
-            <h2>Quiz zur Zahngesundheit & Zahnanatomie</h2>
-            <form id="quiz-form" onSubmit={handleSubmit}>
+            <h2>Quiz</h2>
+            <form>
                 {questions.map((question, index) => (
                     <div key={index}>
                         <p>{question.question}</p>
                         {question.options.map((option, i) => (
                             <label key={i}>
-                                <input type="radio" name={`q${index + 1}`} value={option} /> {option}
+                                <input
+                                    type="radio"
+                                    name={`q${index + 1}`}
+                                    value={option}
+                                    onChange={() => handleAnswerChange(question.id, option)} // Ensure `question.id` is defined
+                                />{' '}
+                                {option}
                             </label>
                         ))}
                     </div>
                 ))}
-
-                <button type="submit">Ergebnisse anzeigen</button>
             </form>
-
-            {showResult && (
-                <div id="result">
-                    <p>Sie haben {score} von {questions.length} Fragen richtig beantwortet.</p>
-                    {incorrectAnswers.length > 0 && (
-                        <div>
-                            <h3>Falsche Antworten:</h3>
-                            <ul>
-                                {incorrectAnswers.map((item, index) => (
-                                    <li key={index}>
-                                        <strong>{item.question}</strong><br />
-                                        Richtige Antwort: {item.correctAnswer}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    )}
-                </div>
-            )}
+            <button type="button" onClick={handleSaveAnswers}>
+                Antworten speichern
+            </button>
+            {message && <p>{message}</p>}
+            {correctCount !== null && <p>Korrekte Antworten: {correctCount}</p>}
         </div>
     );
 };

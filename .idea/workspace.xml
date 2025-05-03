@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff878f9e-7263-4351-b0f2-cc9719de755e" name="Changes" comment="Es werden alle Einträge erfolgreich in der H2 Datenbank angezeigt außer in der Tabelle UserAnswer">
-      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/src/test/java/com/example/backend/DatabaseConnectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/QuizDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/QuizDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/quiz.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/resources/quiz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/UserAnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/controller/UserAnswerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/example/backend/BackendApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/test/java/com/example/backend/BackendApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/src/javascript/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/javascript/Quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +52,10 @@
     &quot;accountId&quot;: &quot;88c1a7f6-0844-45ae-a21e-1ea5a868f63c&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -70,6 +74,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.BackendApplicationTests.executor": "Run",
+    "JUnit.DatabaseConnectionTest.executor": "Run",
     "Node.js.ThreeDModel.js.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -82,7 +88,8 @@
     "Spring Boot.BackendApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Klara/OneDrive/Desktop/3AHBGM/mgin/DentaView-Die4/Backend",
+    "last_directory_selection": "A:/WebstormProjects/DentaView-Die4/src/main/java",
+    "last_opened_file_path": "A:/WebstormProjects/DentaView-Die4/Backend/src/main/java",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -92,6 +99,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -116,7 +124,37 @@
       <recent name="C:\Users\suden\DentaView-Die4\backend" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BackendApplication">
+  <component name="RunManager" selected="JUnit.DatabaseConnectionTest">
+    <configuration name="BackendApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.com.example.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.com.example.backend" />
+      <option name="MAIN_CLASS_NAME" value="test.java.com.example.backend.BackendApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseConnectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.com.example.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.com.example.backend" />
+      <option name="MAIN_CLASS_NAME" value="test.java.com.example.backend.DatabaseConnectionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BackendApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backend.BackendApplication" />
@@ -124,14 +162,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BackendApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="main.java.com.example.backend.BackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="backend" />
+      <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backend.BackendApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DatabaseConnectionTest" />
+        <item itemvalue="JUnit.BackendApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
