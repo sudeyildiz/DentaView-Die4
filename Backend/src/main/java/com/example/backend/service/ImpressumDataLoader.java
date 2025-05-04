@@ -17,7 +17,7 @@ public class ImpressumDataLoader {
     private final ImpressumRepository impressumRepository;
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    @Value("classpath:impressum.json")
+    @Value("classpath:Impressum.json")
     private Resource impressumJson;
 
     public ImpressumDataLoader(ImpressumRepository impressumRepository) {

@@ -1,4 +1,4 @@
-package test.java.com.example.backend;
+package com.example.backend;
 
 import com.example.backend.BackendApplication;
 import org.junit.jupiter.api.Test;

@@ -19,10 +19,10 @@ public class JsonDataLoader {
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     // JSON-Dateien im Backend unter: src/main/resources/
-    @Value("classpath:beitrag1.json")
+    @Value("classpath:Beitrag1.json")
     private Resource beitrag1;
 
-    @Value("classpath:beitrag2.json")
+    @Value("classpath:Beitrag2.json")
     private Resource beitrag2;
 
     public JsonDataLoader(BeitragRepository beitragRepository) {

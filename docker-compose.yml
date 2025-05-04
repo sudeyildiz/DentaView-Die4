@@ -1,0 +1,89 @@
+version: '3.8'
+
+services:
+  database:
+    image: postgres:15-alpine
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: you_username
+      POSTGRES_PASSWORD: your_password
+      POSTGRES_DB: your_database
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    container_name: backend_service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://database:5432/mydatabase
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: password
+
+  frontend:
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    container_name: frontend_service
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+volumes:
+  db_data:
+
+
+
+#### Backend:
+#1. **Docker-Image bauen:**
+#   ```bash
+#   docker build -t backend-app -f Backend/Dockerfile .
+#   ```
+#
+#2. **Container starten:**
+#   ```bash
+#   docker run -p 8080:8080 backend-app
+#   ```
+#
+#### Frontend:
+#1. **Docker-Image bauen:**
+#   ```bash
+#   docker build -t frontend-app -f Frontend/Dockerfile .
+#   ```
+#
+#2. **Container starten:**
+#   ```bash
+#   docker run -p 3000:3000 frontend-app
+
+###Database
+#1. **Starten des Containers mit `docker-compose`**:
+#   ```bash
+#   docker-compose up -d
+#   ```
+#   Dieser Befehl startet alle in der `docker-compose.yml` definierten Services, einschließlich der Datenbank.
+#
+#2. **Prüfen, ob der Container läuft**:
+#   ```bash
+#   docker ps
+#   ```
+#   Zeigt die laufenden Container an, einschließlich des PostgreSQL-Containers.
+#
+#3. **Zugriff auf die Datenbank im Container**:
+#   ```bash
+#   docker exec -it postgres_db psql -U you_username -d your_database
+#   ```
+#   Damit wird eine interaktive PostgreSQL-Shell geöffnet, um die Datenbank zu verwalten.
+#
+#4. **Prüfen der Logs des Containers (bei Problemen)**:
+#   ```bash
+#   docker logs postgres_db
+#   ```
+#   Zeigt die Logs des PostgreSQL-Containers an, um Fehler oder Statusmeldungen zu überprüfen.
+#   ```
