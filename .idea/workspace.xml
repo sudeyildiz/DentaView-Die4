@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff878f9e-7263-4351-b0f2-cc9719de755e" name="Changes" comment="Änderungen für die Speicherung der Antworten des Quiz.&#10;BackendTest + DatabaseTest funktionieren.">
-      <change afterPath="$PROJECT_DIR$/Backend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/src/test/java/com/example/backend/BeitragControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Frontend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="ff878f9e-7263-4351-b0f2-cc9719de755e" name="Changes" comment="Automatisierter Unit Test errstellt&#10;Docker für Backend, Frontend, Database erstellt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/ImpressumDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/ImpressumDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/JsonDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/example/backend/service/JsonDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/example/backend/BackendApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/test/java/com/example/backend/BackendApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/test/java/com/example/backend/DatabaseConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/test/java/com/example/backend/DatabaseConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/public/json/quiz.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/public/json/quiz.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/javascript/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/javascript/Quiz.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746290164638</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Automatisierter Unit Test errstellt&#10;Docker für Backend, Frontend, Database erstellt">
+      <option name="closed" value="true" />
+      <created>1746387649551</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1746387649551</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,6 +384,7 @@
     <MESSAGE value="@Component auskommentiert im JsonDataLoader für ein Aufgabe mit erkannten Json- Dateien" />
     <MESSAGE value="Es werden alle Einträge erfolgreich in der H2 Datenbank angezeigt außer in der Tabelle UserAnswer" />
     <MESSAGE value="Änderungen für die Speicherung der Antworten des Quiz.&#10;BackendTest + DatabaseTest funktionieren." />
-    <option name="LAST_COMMIT_MESSAGE" value="Änderungen für die Speicherung der Antworten des Quiz.&#10;BackendTest + DatabaseTest funktionieren." />
+    <MESSAGE value="Automatisierter Unit Test errstellt&#10;Docker für Backend, Frontend, Database erstellt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automatisierter Unit Test errstellt&#10;Docker für Backend, Frontend, Database erstellt" />
   </component>
 </project>

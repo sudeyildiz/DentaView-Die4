@@ -69,17 +69,22 @@ const Quiz = () => {
         <div>
             <h2>Quiz</h2>
             <form>
-                {questions.map((question, index) => (
-                    <div key={index}>
+                {questions.map((question) => (
+                    <div key={question.id}>
                         <p>{question.question}</p>
-                        {question.options.map((option, i) => (
-                            <label key={i}>
-                                <input
+                        {question.options.map((option) => (
+                            <label key={`${question.id}-${option}`}>
+                            <input
                                     type="radio"
-                                    name={`q${index + 1}`}
+                                    name={`q${question.id}`} // ← wichtig: so werden alle Optionen zu EINER Frage gruppiert
                                     value={option}
-                                    onChange={() => handleAnswerChange(question.id, option)} // Ensure `question.id` is defined
-                                />{' '}
+                                    onChange={() => {
+                                        if (!question.id) {
+                                            console.warn("Frage ohne ID:", question);
+                                        }
+                                        handleAnswerChange(question.id, option);
+                                    }}
+                                />
                                 {option}
                             </label>
                         ))}

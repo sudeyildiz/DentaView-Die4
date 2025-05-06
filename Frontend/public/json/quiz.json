@@ -1,174 +1,117 @@
- {
+{
   "questions": [
     {
+      "id": 1,
       "question": "Wie sollte die Zahnbürste bei der Anwendung der Bass-Methode gehalten werden?",
-      "options": [
-        "Senkrecht zum Zahnfleisch",
-        "In einem Winkel von 45 Grad zum Zahnfleisch",
-        "Parallel zum Zahnfleisch"
-      ],
+      "options": ["Senkrecht zum Zahnfleisch", "In einem Winkel von 45 Grad zum Zahnfleisch", "Parallel zum Zahnfleisch"],
       "correctAnswer": "In einem Winkel von 45 Grad zum Zahnfleisch"
     },
     {
+      "id": 2,
       "question": "Welcher Inhaltsstoff in Zahnpasta unterstützt die Remineralisierung des Zahnschmelzes und schützt vor Karies?",
-      "options": [
-        "Fluorid",
-        "Zink",
-        "Hydroxylapatit"
-      ],
+      "options": ["Fluorid", "Zink", "Hydroxylapatit"],
       "correctAnswer": "Fluorid"
     },
     {
+      "id": 3,
       "question": "Welche Methode ist besonders geeignet, um Zahnzwischenräume zu reinigen?",
-      "options": [
-        "Zahnseide",
-        "Zahncreme",
-        "Zahnbürste"
-      ],
+      "options": ["Zahnseide", "Zahncreme", "Zahnbürste"],
       "correctAnswer": "Zahnseide"
     },
     {
+      "id": 4,
       "question": "Welche Lebensmittel stärken den Zahnschmelz und neutralisieren Säuren?",
-      "options": [
-        "Käse und Milchprodukte",
-        "Zuckerhaltige Snacks",
-        "Chips"
-      ],
+      "options": ["Käse und Milchprodukte", "Zuckerhaltige Snacks", "Chips"],
       "correctAnswer": "Käse und Milchprodukte"
     },
     {
+      "id": 5,
       "question": "Wie oft wird eine professionelle Zahnreinigung (PZR) empfohlen?",
-      "options": [
-        "Alle 3 Monate",
-        "Alle 6 Monate",
-        "Einmal im Jahr"
-      ],
+      "options": ["Alle 3 Monate", "Alle 6 Monate", "Einmal im Jahr"],
       "correctAnswer": "Alle 6 Monate"
     },
     {
+      "id": 6,
       "question": "Welche Schicht des Zahns ist die härteste Substanz im menschlichen Körper?",
-      "options": [
-        "Zahnschmelz",
-        "Dentin",
-        "Zahnmark"
-      ],
+      "options": ["Zahnschmelz", "Dentin", "Zahnmark"],
       "correctAnswer": "Zahnschmelz"
     },
     {
+      "id": 7,
       "question": "Welcher Teil des Zahns verankert den Zahn im Kieferknochen?",
-      "options": [
-        "Wurzel",
-        "Krone",
-        "Zahnhals"
-      ],
+      "options": ["Wurzel", "Krone", "Zahnhals"],
       "correctAnswer": "Wurzel"
     },
     {
+      "id": 8,
       "question": "Welche Zahnart ist ideal zum Reißen und Zerkleinern von Nahrung?",
-      "options": [
-        "Eckzähne",
-        "Schneidezähne",
-        "Backenzähne"
-      ],
+      "options": ["Eckzähne", "Schneidezähne", "Backenzähne"],
       "correctAnswer": "Eckzähne"
     },
     {
+      "id": 9,
       "question": "Wie nennt man die äußere Schicht eines Zahns, die den Zahn vor Abnutzung schützt?",
-      "options": [
-        "Zahnschmelz",
-        "Dentin",
-        "Zahnmark"
-      ],
+      "options": ["Zahnschmelz", "Dentin", "Zahnmark"],
       "correctAnswer": "Zahnschmelz"
     },
     {
+      "id": 10,
       "question": "Was ist der Zahnhals?",
-      "options": [
-        "Der Übergang zwischen Krone und Wurzel",
-        "Der sichtbare Teil des Zahns",
-        "Der innere Teil des Zahns"
-      ],
+      "options": ["Der Übergang zwischen Krone und Wurzel", "Der sichtbare Teil des Zahns", "Der innere Teil des Zahns"],
       "correctAnswer": "Der Übergang zwischen Krone und Wurzel"
     },
     {
+      "id": 11,
       "question": "Was ist die Hauptfunktion der Zähne?",
-      "options": [
-        "Verdauung von Nahrung",
-        "Zerkleinern von Nahrung und Artikulation",
-        "Erzeugung von Speichel"
-      ],
+      "options": ["Verdauung von Nahrung", "Zerkleinern von Nahrung und Artikulation", "Erzeugung von Speichel"],
       "correctAnswer": "Zerkleinern von Nahrung und Artikulation"
     },
     {
+      "id": 12,
       "question": "Welche Zähne sind speziell zum Abbeißen von Nahrung geeignet?",
-      "options": [
-        "Schneidezähne",
-        "Eckzähne",
-        "Mahlzähne"
-      ],
+      "options": ["Schneidezähne", "Eckzähne", "Mahlzähne"],
       "correctAnswer": "Schneidezähne"
     },
     {
+      "id": 13,
       "question": "Welche Zähne befinden sich zwischen den Eckzähnen und den Mahlzähnen?",
-      "options": [
-        "Vormahlzähne",
-        "Schneidezähne",
-        "Weisheitszähne"
-      ],
+      "options": ["Vormahlzähne", "Schneidezähne", "Weisheitszähne"],
       "correctAnswer": "Vormahlzähne"
     },
     {
+      "id": 14,
       "question": "Welches Material ist die härteste Substanz im menschlichen Körper?",
-      "options": [
-        "Dentin",
-        "Zahnschmelz",
-        "Zahnzement"
-      ],
+      "options": ["Dentin", "Zahnschmelz", "Zahnzement"],
       "correctAnswer": "Zahnschmelz"
     },
     {
+      "id": 15,
       "question": "Wie viele Weisheitszähne hat der Mensch normalerweise?",
-      "options": [
-        "2",
-        "4",
-        "6"
-      ],
+      "options": ["2", "4", "6"],
       "correctAnswer": "4"
     },
     {
+      "id": 16,
       "question": "Was umgibt das Dentin im Bereich der Zahnwurzel?",
-      "options": [
-        "Zahnmark",
-        "Zahnschmelz",
-        "Zahnzement"
-      ],
+      "options": ["Zahnmark", "Zahnschmelz", "Zahnzement"],
       "correctAnswer": "Zahnzement"
     },
     {
+      "id": 17,
       "question": "Welche Zähne haben in der Regel zwei bis drei Wurzeln?",
-      "options": [
-        "Schneidezähne",
-        "Backenzähne",
-        "Eckzähne"
-      ],
+      "options": ["Schneidezähne", "Backenzähne", "Eckzähne"],
       "correctAnswer": "Backenzähne"
     },
     {
+      "id": 18,
       "question": "Welche Zähne sind für das Reißen von Nahrung zuständig?",
-      "options": [
-        "Schneidezähne",
-        "Eckzähne",
-        "Mahlzähne"
-      ],
+      "options": ["Schneidezähne", "Eckzähne", "Mahlzähne"],
       "correctAnswer": "Eckzähne"
     },
     {
+      "id": 19,
       "question": "Was kann das Zahnmark enthalten?",
-      "options": [
-        "Blutgefäße und Nervenfasern",
-        "Zahnzement",
-        "Zahnschmelz"
-      ],
+      "options": ["Blutgefäße und Nervenfasern", "Zahnzement", "Zahnschmelz"],
       "correctAnswer": "Blutgefäße und Nervenfasern"
     }
   ]
