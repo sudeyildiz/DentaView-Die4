@@ -1,7 +1,7 @@
 describe('Quiz Component Tests', () => {
     beforeEach(() => {
         // Besuche die Seite mit der Quiz-Komponente
-        cy.visit('http://localhost:62824/Quiz');
+        cy.visit('http://localhost:3000/Quiz');
     });
 
     it('should load the quiz questions correctly', () => {
